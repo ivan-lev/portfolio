@@ -1,0 +1,44 @@
+:root {
+  --color-dark: #191919;
+  --text-color-hero: #d9d9d9;
+  --text-color-primary: #cccccc;
+  --text-color-secondary: #a7a7a7;
+
+  --font-main: 'Montserrat';
+  --font-menu: 'Jura';
+
+  --gradient-name: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
+
+  background-color: var(--color-dark);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+div,
+span,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* 
+
+button {
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+
+} */
