@@ -69,6 +69,11 @@
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       gap: 75px 100px;
+
+      &-element {
+        max-height: 120px;
+        max-width: 120px;
+      }
     }
   }
 }
