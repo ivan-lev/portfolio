@@ -1,18 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Header.scss';
 
+import Logo from '../Logo/Logo.jsx';
 import Menu from '../Menu/Menu.jsx';
 import SocialLinks from '../SocialIcons/SocialLinks.jsx';
-
-import logo from '../../images/favicon.png';
 
 function Header() {
   return (
     <header className="header">
-      <Link to="/">
-        <img className="header__logo" src={logo}></img>
-      </Link>
+      <Logo />
       <div className="header__content">
         <Menu />
         <SocialLinks />
