@@ -6,12 +6,12 @@ export default function Menu() {
   return (
     <menu className="menu__content">
       <li>
-        <Link className="menu__link" to="#">
+        <Link className="menu__link" to="/">
           Home
         </Link>
       </li>
       <li>
-        <Link className="menu__link" to="#">
+        <Link className="menu__link" to="/about">
           About
         </Link>
       </li>
