@@ -1,0 +1,16 @@
+.menu__content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  list-style-type: none;
+}
+
+.menu__link {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--text-color-secondary);
+  font-family: var(--font-menu);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+}
