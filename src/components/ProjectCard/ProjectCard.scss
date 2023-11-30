@@ -1,0 +1,87 @@
+.project-card {
+  max-width: 400px;
+  min-height: 570px;
+  box-sizing: border-box;
+  background-color: var(--color-middle);
+  border-radius: 20px;
+  box-shadow: 30px 30px 30px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: var(--text-color-primary);
+
+  &-image {
+    height: 260px;
+    object-fit: cover;
+  }
+
+  &-content {
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 100%;
+  }
+
+  &-title {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  &-text {
+    margin: 0;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+  }
+
+  &-tech-stack {
+    margin: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+
+    &::before {
+      content: 'Tech stack: ';
+      font-weight: 400;
+    }
+  }
+
+  &-links {
+    margin: 0;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-around;
+
+    & > a {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      text-decoration-line: underline;
+      color: var(--text-color-light);
+      cursor: pointer;
+      display: flex;
+      gap: 10px;
+    }
+  }
+
+  &-link-preview::before {
+    background-image: url(../../images/icon-link.svg);
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    content: '';
+  }
+
+  &-link-github::before {
+    background-image: url('../../images/icon-tech-github.svg');
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    content: '';
+  }
+}
