@@ -12,6 +12,9 @@ import nodejs from '../../images/icon-tech-nodejs.svg';
 import react from '../../images/icon-tech-react.svg';
 import redux from '../../images/icon-tech-redux.svg';
 
+import filler from '../../images/filler.png';
+import ProjectCard from '../ProjectCard/ProjectCard.jsx';
+
 function Main() {
   return (
     <main className="main">
@@ -27,36 +30,48 @@ function Main() {
         <img className="main__avatar" src={avatar} alt="My photo"></img>
       </section>
       <section className="main__stack">
-        <h2 className="main__stack-title">My Tech Stack</h2>
-        <p className="main__stack-subtitle"> Technologies I’ve been working with recently</p>
+        <h2 className="main__title">My Tech Stack</h2>
+        <p className="main__subtitle">Technologies I’ve been working with recently</p>
         <ul className="main__stack-list">
-          <li>
-            <img className="main__stack-list-element" src={html}></img>
+          <li className="main__stack-list-element">
+            <img className="main__stack-list-logo" src={html}></img>
           </li>
-          <li>
-            <img className="main__stack-list-element" src={css}></img>
+          <li className="main__stack-list-element">
+            <img className="main__stack-list-logo" src={css}></img>
           </li>
-          <li>
-            <img className="main__stack-list-element" src={sass}></img>
+          <li className="main__stack-list-element">
+            <img className="main__stack-list-logo" src={sass}></img>
           </li>
-          <li>
-            <img className="main__stack-list-element" src={git}></img>
+          <li className="main__stack-list-element">
+            <img className="main__stack-list-logo" src={git}></img>
           </li>
-          <li>
-            <img className="main__stack-list-element" src={github}></img>
+          <li className="main__stack-list-element">
+            <img className="main__stack-list-logo" src={github}></img>
           </li>
-          <li>
-            <img className="main__stack-list-element" src={js}></img>
+          <li className="main__stack-list-element">
+            <img className="main__stack-list-logo" src={js}></img>
           </li>
-          <li>
-            <img className="main__stack-list-element" src={nodejs}></img>
+          <li className="main__stack-list-element">
+            <img className="main__stack-list-logo" src={nodejs}></img>
           </li>
-          <li>
-            <img className="main__stack-list-element" src={react}></img>
+          <li className="main__stack-list-element">
+            <img className="main__stack-list-logo" src={react}></img>
           </li>
-          <li>
-            <img className="main__stack-list-element" src={redux}></img>
+          <li className="main__stack-list-element">
+            <img className="main__stack-list-logo" src={redux}></img>
           </li>
+        </ul>
+      </section>
+      <section className="projects">
+        <h2 className="main__title">Projects</h2>
+        <p className="main__subtitle">Things I’ve built so far</p>
+        <ul className="main__projects-list">
+          <ProjectCard filler={filler} />
+          <ProjectCard filler={filler} />
+          <ProjectCard filler={filler} />
+          <ProjectCard filler={filler} />
+          <ProjectCard filler={filler} />
+          <ProjectCard filler={filler} />
         </ul>
       </section>
     </main>
