@@ -14,6 +14,7 @@ import redux from '../../images/icon-tech-redux.svg';
 
 import filler from '../../images/filler.png';
 import ProjectCard from '../ProjectCard/ProjectCard.jsx';
+import TechElement from '../TechElement/TechElement.jsx';
 
 function Main() {
   return (
@@ -33,33 +34,15 @@ function Main() {
         <h2 className="main__title">My Tech Stack</h2>
         <p className="main__subtitle">Technologies I’ve been working with recently</p>
         <ul className="main__stack-list">
-          <li className="main__stack-list-element">
-            <img className="main__stack-list-logo" src={html}></img>
-          </li>
-          <li className="main__stack-list-element">
-            <img className="main__stack-list-logo" src={css}></img>
-          </li>
-          <li className="main__stack-list-element">
-            <img className="main__stack-list-logo" src={sass}></img>
-          </li>
-          <li className="main__stack-list-element">
-            <img className="main__stack-list-logo" src={git}></img>
-          </li>
-          <li className="main__stack-list-element">
-            <img className="main__stack-list-logo" src={github}></img>
-          </li>
-          <li className="main__stack-list-element">
-            <img className="main__stack-list-logo" src={js}></img>
-          </li>
-          <li className="main__stack-list-element">
-            <img className="main__stack-list-logo" src={nodejs}></img>
-          </li>
-          <li className="main__stack-list-element">
-            <img className="main__stack-list-logo" src={react}></img>
-          </li>
-          <li className="main__stack-list-element">
-            <img className="main__stack-list-logo" src={redux}></img>
-          </li>
+          <TechElement logo={html} alt="HTML logo" />
+          <TechElement logo={css} alt="CSS logo" />
+          <TechElement logo={sass} alt="SASS logo" />
+          <TechElement logo={git} alt="Git logo" />
+          <TechElement logo={github} alt="GitHub logo" />
+          <TechElement logo={js} alt="JavaScript logo" />
+          <TechElement logo={nodejs} alt="NodeJS logo" />
+          <TechElement logo={react} alt="React logo" />
+          <TechElement logo={redux} alt="Redux logo" />
         </ul>
       </section>
       <section className="projects">
