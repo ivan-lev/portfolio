@@ -1,3 +1,39 @@
 .footer {
   flex-grow: 0;
+  width: 100%;
+  font-family: var(--font-menu);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--text-color-secondary, #a7a7a7);
+
+  & > * {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__top {
+    &-content {
+      display: flex;
+      align-items: center;
+      gap: 35px;
+
+      & > a {
+        color: var(--text-color-secondary, #a7a7a7);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+      }
+    }
+  }
+
+  &__divider {
+    height: 2px;
+    background-color: var(--color-light, #ffffff);
+    opacity: 0.3;
+    margin: 55px 0;
+  }
+
+  &__bottom {
+  }
 }
