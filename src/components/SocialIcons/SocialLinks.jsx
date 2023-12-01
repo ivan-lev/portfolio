@@ -9,7 +9,7 @@ import iconLinkedIn from '../../images/icon-social-linkedin.svg';
 export default function SocialLinks() {
   return (
     <div className="social-links">
-      <Link to="#">
+      <Link to="https://github.com/ivan-lev">
         <img className="social-icon" src={iconGithub}></img>
       </Link>
       <Link to="#">
