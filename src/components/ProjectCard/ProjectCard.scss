@@ -1,6 +1,5 @@
 .project-card {
   max-width: 400px;
-  //min-height: 570px;
   box-sizing: border-box;
   background-color: var(--color-middle);
   border-radius: 20px;
@@ -13,7 +12,6 @@
   @media screen and (max-width: 1440px) {
     max-width: 350px;
     border-radius: 15px;
-    //min-height: 570px;
   }
 
   &-image {
@@ -115,25 +113,9 @@
 
   &-link-preview::before {
     background-image: url('../../images/icon-link.svg');
-    // background-size: 20px 20px;
-    // display: inline-block;
-    // width: 20px;
-    // height: 20px;
-    // content: '';
-
-    // @media screen and (max-width: 1440px) {
-    //   background-size: 15px 15px;
-    //   width: 15px;
-    //   height: 15px;
-    // }
   }
 
   &-link-github::before {
     background-image: url('../../images/icon-tech-github.svg');
-    // background-size: 20px 20px;
-    // display: inline-block;
-    // width: 20px;
-    // height: 20px;
-    // content: '';
   }
 }
