@@ -15,18 +15,9 @@ export default function Menu() {
           About
         </Link>
       </li>
+
       <li>
-        <Link className="menu__link" to="#">
-          Tech Stack
-        </Link>
-      </li>
-      <li>
-        <Link className="menu__link" to="#">
-          Projects
-        </Link>
-      </li>
-      <li>
-        <Link className="menu__link" to="#">
+        <Link className="menu__link" to="/contact">
           Contact
         </Link>
       </li>
