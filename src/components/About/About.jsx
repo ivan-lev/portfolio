@@ -26,9 +26,9 @@ export default function About() {
         <ExperienceElement
           position="Junior Web Developer"
           type="Internship"
-          organization="Yandex Co."
-          place="Saint Petersburg"
-          period="Jan 2024 - Dec 2025"
+          organization="Mail.ru Co. Ltd"
+          place="Moscow"
+          period="Jan 2023 - Dec 2024"
         />
       </article>
       <article>
