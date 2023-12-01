@@ -35,6 +35,19 @@
     }
   }
 
+  &__text {
+    color: var(--text-color-primary, #666);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+
+    @media screen and (max-width: 1440px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
   &__hero {
     display: flex;
     justify-content: space-between;
