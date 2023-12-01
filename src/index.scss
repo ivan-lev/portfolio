@@ -3,6 +3,8 @@
   --color-middle: #363636;
   --color-light: #ffffff;
   --color-green: #d7ffe0;
+  --color-gradient: linear-gradient(90deg, #13b0f5 0%, #e70faa 100%);
+  --color-gradient-vertical: linear-gradient(0deg, #13b0f5 -2%, #e70faa 100%);
   --text-color-hero: #d9d9d9;
   --text-color-primary: #cccccc;
   --text-color-secondary: #a7a7a7;
@@ -11,8 +13,6 @@
 
   --font-main: 'Montserrat';
   --font-menu: 'Jura';
-
-  --gradient-name: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
 
   background-color: var(--color-dark);
 
