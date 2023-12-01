@@ -1,0 +1,16 @@
+.about {
+  &__email {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    background: var(--color-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @media screen and (max-width: 1440px) {
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
+  }
+}
