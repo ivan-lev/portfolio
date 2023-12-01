@@ -1,0 +1,27 @@
+.credits {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__list-element {
+    display: flex;
+    align-items: center;
+  }
+  &__image {
+    height: 20px;
+    margin-left: 10px;
+  }
+
+  &__link {
+    color: var(--text-color-secondary, #a7a7a7);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+
+    @media screen and (max-width: 1440px) {
+      font-size: 14px;
+    }
+  }
+}
