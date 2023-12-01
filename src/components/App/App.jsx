@@ -7,6 +7,7 @@ import Main from '../Main/Main.jsx';
 import Footer from '../Footer/Footer.jsx';
 import About from '../About/About.jsx';
 import Contact from '../Contact/Contact.jsx';
+import Credits from '../Credits/Credits.jsx';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/credits" element={<Credits />} />
       </Routes>
       <Footer />
     </div>
