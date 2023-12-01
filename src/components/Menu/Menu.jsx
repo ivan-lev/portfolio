@@ -21,6 +21,11 @@ export default function Menu() {
           Contact
         </Link>
       </li>
+      <li>
+        <Link className="menu__link" to="/credits">
+          Credits
+        </Link>
+      </li>
     </menu>
   );
 }
