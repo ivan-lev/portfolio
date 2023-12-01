@@ -42,6 +42,7 @@
   }
 
   &__organization {
+    min-width: 30%;
     &::before {
       background-image: url('../../images/icon-experience-organization.svg');
       background-size: 16px 16px;
