@@ -70,7 +70,7 @@
   }
 
   &__hero-name {
-    background: var(--gradient-name);
+    background: var(--color-gradient);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -90,8 +90,7 @@
     border-radius: 50%;
     width: 350px;
     height: 350px;
-    background: linear-gradient(gray, gray) padding-box,
-      linear-gradient(to bottom, #e70faa, #13b0f5) border-box;
+    background: linear-gradient(gray, gray) padding-box, var(--color-gradient-vertical) border-box;
     border: 12px solid transparent;
 
     @media screen and (max-width: 1440px) {
