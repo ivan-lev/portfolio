@@ -1,19 +1,77 @@
 .experience {
   &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px 15px;
+    border-bottom: 2px solid var(--color-middle);
+    color: var(--text-color-primary);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
   }
 
   &__row {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin: 0;
+
+    & > span {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
   }
 
   &__position {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
   }
 
   &__type {
+    margin-left: auto;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--text-color-green);
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: var(--color-green);
   }
 
-  &__place {
+  &__organization {
+    &::before {
+      background-image: url('../../images/icon-experience-organization.svg');
+      background-size: 16px 16px;
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      content: '';
+    }
+  }
+
+  &__location {
+    &::before {
+      background-image: url('../../images/icon-experience-location.svg');
+      background-size: 16px 16px;
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      content: '';
+    }
   }
 
   &__period {
+    margin-left: auto;
+    &::before {
+      background-image: url('../../images/icon-experience-calendar.svg');
+      background-size: 16px 16px;
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      content: '';
+    }
   }
 }

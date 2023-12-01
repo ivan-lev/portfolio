@@ -5,13 +5,13 @@ export default function ExperienceElement({ position, type, organization, place,
   return (
     <div className="experience__container">
       <p className="experience__row">
-        <span className="experience__position"></span>
-        <span className="experience__type"></span>
+        <span className="experience__position">{position}</span>
+        <span className="experience__type">{type}</span>
       </p>
-      <p className="experience__container">
-        <span className="experience__organization"></span>
-        <span className="experience__place"></span>
-        <span className="experience__period"></span>
+      <p className="experience__row">
+        <span className="experience__organization">{organization}</span>
+        <span className="experience__location">{place}</span>
+        <span className="experience__period">{period}</span>
       </p>
     </div>
   );
