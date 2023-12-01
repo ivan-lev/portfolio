@@ -8,4 +8,9 @@
 .social-icon {
   height: 30px;
   width: 30px;
+
+  @media screen and (max-width: 1440px) {
+    height: 24px;
+    width: 24px;
+  }
 }

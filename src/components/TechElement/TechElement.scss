@@ -7,4 +7,9 @@
 .main__stack-list-logo {
   max-height: 120px;
   max-width: 120px;
+
+  @media screen and (max-width: 1440px) {
+    max-height: 80px;
+    max-width: 80px;
+  }
 }

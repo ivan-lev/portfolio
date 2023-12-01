@@ -2,26 +2,37 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  gap: 350px;
+  gap: 250px;
   width: 100%;
 
+  @media screen and (max-width: 1440px) {
+    gap: 180px;
+  }
+
   &__title {
-    //text-align: center;
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
-    line-height: 26px;
     color: var(--text-color-primary);
     margin-bottom: 50px;
+
+    @media screen and (max-width: 1440px) {
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
   }
 
   &__subtitle {
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
-    line-height: 26px;
     color: var(--text-color-secondary);
     margin-bottom: 140px;
+
+    @media screen and (max-width: 1440px) {
+      font-size: 24px;
+      margin-bottom: 100px;
+    }
   }
 
   &__hero {
@@ -39,6 +50,10 @@
     line-height: 70px;
     letter-spacing: -1px;
     text-align: left;
+
+    @media screen and (max-width: 1440px) {
+      font-size: 40px;
+    }
   }
 
   &__hero-name {
@@ -52,6 +67,10 @@
     font-weight: 700;
     line-height: 70px;
     letter-spacing: -1px;
+
+    @media screen and (max-width: 1440px) {
+      font-size: 40px;
+    }
   }
 
   &__avatar {
@@ -61,6 +80,12 @@
     background: linear-gradient(gray, gray) padding-box,
       linear-gradient(to bottom, #e70faa, #13b0f5) border-box;
     border: 12px solid transparent;
+
+    @media screen and (max-width: 1440px) {
+      width: 300px;
+      height: 300px;
+      border: 10px solid transparent;
+    }
   }
 
   &__stack {
@@ -69,6 +94,10 @@
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       row-gap: 75px;
+
+      @media screen and (max-width: 1440px) {
+        row-gap: 55px;
+      }
     }
   }
   &__projects {

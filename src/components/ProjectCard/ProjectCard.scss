@@ -1,6 +1,6 @@
 .project-card {
   max-width: 400px;
-  min-height: 570px;
+  //min-height: 570px;
   box-sizing: border-box;
   background-color: var(--color-middle);
   border-radius: 20px;
@@ -10,9 +10,19 @@
   overflow: hidden;
   color: var(--text-color-primary);
 
+  @media screen and (max-width: 1440px) {
+    max-width: 350px;
+    border-radius: 15px;
+    //min-height: 570px;
+  }
+
   &-image {
     height: 260px;
     object-fit: cover;
+
+    @media screen and (max-width: 1440px) {
+      height: 200px;
+    }
   }
 
   &-content {
@@ -21,12 +31,21 @@
     flex-direction: column;
     gap: 15px;
     height: 100%;
+
+    @media screen and (max-width: 1440px) {
+      padding: 20px 25px;
+      gap: 12px;
+    }
   }
 
   &-title {
     font-size: 28px;
     font-style: normal;
     font-weight: 500;
+
+    @media screen and (max-width: 1440px) {
+      font-size: 24px;
+    }
   }
 
   &-text {
@@ -35,6 +54,11 @@
     font-style: normal;
     font-weight: 300;
     line-height: 26px;
+
+    @media screen and (max-width: 1440px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
 
   &-tech-stack {
@@ -42,6 +66,10 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
+
+    @media screen and (max-width: 1440px) {
+      font-size: 12px;
+    }
 
     &::before {
       content: 'Tech stack: ';
@@ -64,24 +92,48 @@
       cursor: pointer;
       display: flex;
       gap: 10px;
+
+      @media screen and (max-width: 1440px) {
+        font-size: 12px;
+      }
+
+      &::before {
+        background-size: 20px 20px;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        content: '';
+
+        @media screen and (max-width: 1440px) {
+          background-size: 15px 15px;
+          width: 15px;
+          height: 15px;
+        }
+      }
     }
   }
 
   &-link-preview::before {
-    background-image: url(../../images/icon-link.svg);
-    background-size: 20px 20px;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    content: '';
+    background-image: url('../../images/icon-link.svg');
+    // background-size: 20px 20px;
+    // display: inline-block;
+    // width: 20px;
+    // height: 20px;
+    // content: '';
+
+    // @media screen and (max-width: 1440px) {
+    //   background-size: 15px 15px;
+    //   width: 15px;
+    //   height: 15px;
+    // }
   }
 
   &-link-github::before {
     background-image: url('../../images/icon-tech-github.svg');
-    background-size: 20px 20px;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    content: '';
+    // background-size: 20px 20px;
+    // display: inline-block;
+    // width: 20px;
+    // height: 20px;
+    // content: '';
   }
 }

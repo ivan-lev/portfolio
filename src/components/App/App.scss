@@ -16,6 +16,9 @@
   margin: 0 auto;
   font-family: var(--font-main);
   text-align: center;
-  // min-width: 100%;
-  // min-width: 320px;
+
+  @media screen and (max-width: 1440px) {
+    max-width: 950px;
+    gap: 200px;
+  }
 }
