@@ -16,9 +16,37 @@
   margin: 0 auto;
   font-family: var(--font-main);
   text-align: center;
+  position: relative;
 
   @media screen and (max-width: 1440px) {
     max-width: 950px;
     gap: 150px;
+  }
+}
+
+.toggle-language-button {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  cursor: pointer;
+  height: 25px;
+  min-width: 54px;
+  padding: 0 10px;
+  text-align: center;
+
+  &:hover {
+    border-color: #dadce0;
+    background-color: #cccccc;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px;
+    color: #202124;
+  }
+
+  &:focus {
+    border-color: #4285f4;
+    outline: none;
   }
 }
