@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Footer.scss';
+
+import { LanguageContext } from '../../contexts/languageContext.js';
 
 import Logo from '../Logo/Logo.jsx';
 import Menu from '../Menu/Menu.jsx';
 import SocialIcons from '../SocialIcons/SocialLinks.jsx';
 
 function Footer() {
+  const language = useContext(LanguageContext);
+
   return (
     <footer className="footer">
       <div className="footer__top">
@@ -19,9 +23,7 @@ function Footer() {
       <div className="footer__divider" />
       <div className="footer__bottom">
         <Menu />
-        <div className="footer__bottom-credits">
-          Designed and built by Ivan Lev with Love & Chinese Fine Teas
-        </div>
+        <div className="footer__bottom-credits">{language.footerText}</div>
       </div>
     </footer>
   );

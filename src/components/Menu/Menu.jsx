@@ -1,29 +1,32 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import './Menu.scss';
 
+import { LanguageContext } from '../../contexts/languageContext.js';
+
 export default function Menu() {
+  const language = useContext(LanguageContext);
+
   return (
     <menu className="menu__content">
-      <li>
+      <li className="menu__element">
         <Link className="menu__link" to="/">
-          Home
+          {language.menuHome}
         </Link>
       </li>
-      <li>
+      <li className="menu__element">
         <Link className="menu__link" to="/about">
-          About
+          {language.menuAbout}
         </Link>
       </li>
-
-      <li>
+      <li className="menu__element">
         <Link className="menu__link" to="/contact">
-          Contact
+          {language.menuContact}
         </Link>
       </li>
-      <li>
+      <li className="menu__element">
         <Link className="menu__link" to="/credits">
-          Credits
+          {language.menuCredits}
         </Link>
       </li>
     </menu>

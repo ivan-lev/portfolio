@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Main.scss';
+
+import { LanguageContext } from '../../contexts/languageContext.js';
 
 import avatar from '../../images/avatar.jpg';
 import sass from '../../images/icon-tech-sass.svg';
@@ -17,22 +19,25 @@ import ProjectCard from '../ProjectCard/ProjectCard.jsx';
 import TechElement from '../TechElement/TechElement.jsx';
 
 function Main() {
+  const language = useContext(LanguageContext);
+
   return (
     <main className="main">
       <section className="main__hero">
         <div className="main__hero-text">
-          Hi 👋,
+          {language.heroTextFirst},
           <br />
-          My name is
+          {language.heroTextSecond}
           <br />
-          <span className="main__hero-name">Ivan Lev</span>
-          <br />I build things for web
+          <span className="main__hero-name">{language.heroName}</span>
+          <br />
+          {language.heroTextThird}
         </div>
-        <img className="main__avatar" src={avatar} alt="My photo"></img>
+        <img className="main__avatar" src={avatar} alt={language.avatarAlt}></img>
       </section>
       <section className="main__stack">
-        <h2 className="main__title">My Tech Stack</h2>
-        <p className="main__subtitle">Technologies I’ve been working with recently</p>
+        <h2 className="main__title">{language.techStack}</h2>
+        <p className="main__subtitle">{language.technologies}</p>
         <ul className="main__stack-list">
           <TechElement logo={html} alt="HTML logo" />
           <TechElement logo={css} alt="CSS logo" />
@@ -46,8 +51,8 @@ function Main() {
         </ul>
       </section>
       <section className="projects">
-        <h2 className="main__title">Projects</h2>
-        <p className="main__subtitle">Things I’ve built so far</p>
+        <h2 className="main__title">{language.projectsTitle}</h2>
+        <p className="main__subtitle">{language.projectsSubtitle}</p>
         <ul className="main__projects-list">
           <ProjectCard filler={filler} />
           <ProjectCard filler={filler} />
