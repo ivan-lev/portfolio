@@ -13,7 +13,7 @@
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
-    color: var(--text-color-primary);
+    color: var(--color-primary);
     margin-bottom: 50px;
 
     @media screen and (max-width: 1440px) {
@@ -26,7 +26,7 @@
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
-    color: var(--text-color-secondary);
+    color: var(--color-secondary);
     margin-bottom: 140px;
 
     @media screen and (max-width: 1440px) {
@@ -36,7 +36,7 @@
   }
 
   &__text {
-    color: var(--text-color-primary, #666);
+    color: var(--color-primary, #666);
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -55,7 +55,7 @@
   }
 
   &__hero-text {
-    color: var(--text-color-hero);
+    color: var(--color-hero);
     font-family: var(--font-main);
     font-size: 58px;
     font-style: normal;

@@ -1,20 +1,35 @@
 :root {
-  --color-dark: #191919;
-  --color-middle: #363636;
+  // dark theme
+  --bg-dark-main: #191919;
+  --bg-dark-card: #363636;
   --color-light: #ffffff;
-  --color-green: #d7ffe0;
+  --color-green: #018c0f;
+
+  --color-dark-hero: #d9d9d9;
+  --color-dark-primary: #cccccc;
+  --color-dark-secondary: #a7a7a7;
+  --color-dark-light: #ffffff;
+  --color-dark-green: #d7ffe0;
+
   --color-gradient: linear-gradient(90deg, #13b0f5 0%, #e70faa 100%);
   --color-gradient-vertical: linear-gradient(0deg, #13b0f5 -2%, #e70faa 100%);
-  --text-color-hero: #d9d9d9;
-  --text-color-primary: #cccccc;
-  --text-color-secondary: #a7a7a7;
-  --text-color-light: #ffffff;
-  --text-color-green: #018c0f;
+
+  // beige theme will be here
+
+  // current colors and fonts
+
+  --bg-color-primary: var(--bg-dark-main);
+  --bg-color-secondary: var(--bg-dark-card);
+
+  --color-hero: var(--color-dark-hero);
+  --color-primary: var(--color-dark-primary);
+  --color-secondary: var(--color-dark-secondary);
+  --color-additional: var(--color-dark-light);
 
   --font-main: 'Montserrat';
   --font-menu: 'Jura';
 
-  background-color: var(--color-dark);
+  background-color: var(--bg-color-primary);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -41,14 +56,3 @@ menu {
 ul {
   list-style: none;
 }
-
-/* 
-
-button {
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-
-} */
