@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.scss';
 
@@ -38,7 +38,6 @@ function App() {
     const elem = document.documentElement;
     const computedStyles = getComputedStyle(elem);
     const bgColor = computedStyles.getPropertyValue('--bg-color-primary');
-    //console.log(bgColor);
     if (bgColor === '#faf0e6') {
       elem.style.setProperty('--bg-color-primary', 'var(--bg-dark-main)');
       elem.style.setProperty('--bg-color-secondary', 'var(--bg-dark-card');
@@ -60,7 +59,7 @@ function App() {
   return (
     <div className="page">
       <button className="toggle-language-button" onClick={toggleLanguage}>
-        ru-en
+        {language.name === 'en' ? 'ru' : 'en'}
       </button>
       <button className="toggle-theme-button" onClick={toggleTheme}>
         theme

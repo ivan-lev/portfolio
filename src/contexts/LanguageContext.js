@@ -4,6 +4,7 @@ export const LanguageContext = React.createContext();
 
 export const languages = {
   en: {
+    name: 'en',
     menuHome: 'Home',
     menuAbout: 'About',
     menuContact: 'Contact',
@@ -21,6 +22,7 @@ export const languages = {
     aboutmeTitle: 'About me',
     aboutmeInfo:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia iste blanditiis, explicabo sapiente molestias et sint facilis officiis aperiam nihil nesciunt aut similique. Illum, tempore facere. Adipisci nesciunt nostrum repudiandae?',
+    contactText: 'For any questions please mail me:',
     workExperience: 'Work experience',
     education: 'Education',
     creditsSite: 'This site was created using free template from ',
@@ -28,6 +30,7 @@ export const languages = {
     creditsTelegramLogo: 'Telegram icon from'
   },
   ru: {
+    name: 'ru',
     menuHome: 'Домой',
     menuAbout: 'Обо мне',
     menuContact: 'Контакты',
@@ -45,6 +48,7 @@ export const languages = {
     aboutmeTitle: 'Обо мне',
     aboutmeInfo:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia iste blanditiis, explicabo sapiente molestias et sint facilis officiis aperiam nihil nesciunt aut similique. Illum, tempore facere. Adipisci nesciunt nostrum repudiandae?',
+    contactText: 'Если у вас есть вопросы, пишите на этот адрес:',
     workExperience: 'Опыт работы',
     education: 'Образование',
     creditsSite: 'Сайт был создан на основе этого шаблона из',
