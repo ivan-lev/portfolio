@@ -34,10 +34,25 @@ function App() {
     }
   };
 
+  const toggleTheme = () => {
+    const elem = document.documentElement;
+    const computedStyles = getComputedStyle(elem);
+    const bgColor = computedStyles.getPropertyValue('--color-dark');
+    if (bgColor === '#191919') {
+      elem.style.setProperty('--color-dark', '#333333');
+    }
+    if (bgColor === '#333333') {
+      elem.style.setProperty('--color-dark', '#191919');
+    }
+  };
+
   return (
     <div className="page">
       <button className="toggle-language-button" onClick={toggleLanguage}>
         ru-en
+      </button>
+      <button className="toggle-theme-button" onClick={toggleTheme}>
+        theme
       </button>
       <LanguageContext.Provider value={language}>
         <Header />
