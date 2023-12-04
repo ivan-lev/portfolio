@@ -27,14 +27,15 @@ export const languages = {
     education: 'Education',
     creditsSite: 'This site was created using free template from ',
     creditsLogo: 'Logo was founded on',
-    creditsTelegramLogo: 'Telegram icon from'
+    creditsTelegramLogo: 'Telegram icon from',
+    creditsVitePlugin: 'Convenient work with svg files is carried out using this package:'
   },
   ru: {
     name: 'ru',
     menuHome: 'Домой',
     menuAbout: 'Обо мне',
     menuContact: 'Контакты',
-    menuCredits: 'Кредитс',
+    menuCredits: 'Благодарности',
     heroTextFirst: 'Привет 👋',
     heroTextSecond: 'Меня зовут',
     heroName: 'Иван Лев',
@@ -52,7 +53,8 @@ export const languages = {
     workExperience: 'Опыт работы',
     education: 'Образование',
     creditsSite: 'Сайт был создан на основе этого шаблона из',
-    creditsLogo: 'Логотип был взят здесь :',
-    creditsTelegramLogo: 'Иконка телеграма отсюда: '
+    creditsLogo: 'Логотип был взят здесь:',
+    creditsTelegramLogo: 'Иконка телеграма отсюда:',
+    creditsVitePlugin: 'Удобная работа с svg файлами осуществлена посредством этого пакета:'
   }
 };
