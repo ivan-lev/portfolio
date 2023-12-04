@@ -24,7 +24,7 @@ export default function Credits() {
         </li>
         <li className="credits__list-element">
           <span className="main__text">{language.creditsLogo}&nbsp;</span>
-          <Link className="credits__link" to="https://www.flaticon.com/search?word=portfolio">
+          <Link className="credits__link" to="https://www.flaticon.com/free-icon/coding_1159385">
             Flaticon.com
           </Link>
           <img className="credits__image" src={logo}></img>
@@ -52,6 +52,15 @@ export default function Credits() {
             to="https://www.svgrepo.com/collection/solar-outline-icons/"
           >
             Solar Outline Icons
+          </Link>
+        </li>
+        <li className="credits__list-element">
+          <span className="main__text">Отличная статья о&nbsp;</span>
+          <Link
+            className="credits__link"
+            to="https://www.svgrepo.com/collection/solar-outline-icons/"
+          >
+            кастомных css-свойствах и темизации
           </Link>
         </li>
       </ul>
