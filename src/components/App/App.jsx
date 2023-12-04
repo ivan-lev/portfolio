@@ -1,12 +1,10 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.scss';
 
 import { LanguageContext, languages } from '../../contexts/languageContext.js';
-import toggleTheme from '../../utils/theme-toggle.js';
 
-import SunIcon from '../../images/icon-theme-sun.svg?react';
-import MoonIcon from '../../images/icon-theme-moon.svg?react';
+import ToggleThemeButton from '../ToggleThemeButton/ToggleThemeButton.jsx';
 
 import Header from '../Header/Header.jsx';
 import Main from '../Main/Main.jsx';
@@ -30,7 +28,6 @@ function App() {
     if (!localStorage.getItem('theme')) {
       localStorage.setItem('theme', 'dark');
     }
-    setLanguage(languages[localStoredLang]);
   }, []);
 
   const toggleLanguage = () => {
@@ -49,9 +46,7 @@ function App() {
       <button className="toggle-language-button" onClick={toggleLanguage}>
         {language.name === 'en' ? 'ru' : 'en'}
       </button>
-      <button className="toggle-theme__button" onClick={toggleTheme}>
-        <SunIcon className="toggle-theme__icon" />
-      </button>
+      <ToggleThemeButton theme={theme} setTheme={setTheme} />
       <LanguageContext.Provider value={language}>
         <Header />
         <Routes>
