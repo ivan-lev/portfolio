@@ -45,6 +45,7 @@ function App() {
       elem.style.setProperty('--color-primary', 'var(--color-dark-primary)');
       elem.style.setProperty('--color-secondary', 'var(--color-dark-secondary)');
       elem.style.setProperty('--color-additional', 'var(--color-dark-additional)');
+      elem.style.setProperty('--color-icon', 'var(--color-dark-icon)');
     }
     if (bgColor === '#191919') {
       elem.style.setProperty('--bg-color-primary', 'var(--bg-beige-main)');
@@ -53,6 +54,7 @@ function App() {
       elem.style.setProperty('--color-primary', 'var(--color-beige-primary)');
       elem.style.setProperty('--color-secondary', 'var(--color-beige-secondary)');
       elem.style.setProperty('--color-additional', 'var(--color-beige-additional)');
+      elem.style.setProperty('--color-icon', 'var(--color-beige-icon)');
     }
   };
 
