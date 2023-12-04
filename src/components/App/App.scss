@@ -24,8 +24,7 @@
   }
 }
 
-.toggle-language-button,
-.toggle-theme-button {
+.toggle-language-button {
   position: fixed;
   top: 50px;
   left: 50px;
@@ -46,6 +45,31 @@
   }
 }
 
-.toggle-theme-button {
-  left: 110px;
+.toggle-theme {
+  &__button {
+    cursor: pointer;
+    position: fixed;
+    top: 50px;
+    left: 110px;
+    border: 0;
+    background: none;
+
+    & path {
+      fill: #cccccc;
+      transition: all 0.5s;
+    }
+
+    &:hover path {
+      fill: #ffffff;
+    }
+  }
+
+  &__icon {
+    height: 20px;
+    width: 20px;
+
+    & path {
+      // fill: #cccccc;
+    }
+  }
 }
