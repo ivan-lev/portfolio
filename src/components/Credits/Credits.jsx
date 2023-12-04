@@ -11,7 +11,7 @@ export default function Credits() {
   const language = useContext(LanguageContext);
 
   return (
-    <section>
+    <section className="credits">
       <ul className="credits__list">
         <li className="credits__list-element">
           <span className="main__text">{language.creditsSite}&nbsp;</span>
@@ -38,6 +38,12 @@ export default function Credits() {
             Freepik.com
           </Link>
           <img className="credits__image" src={telegramIcon}></img>
+        </li>
+        <li className="credits__list-element">
+          <span className="main__text">{language.creditsVitePlugin}&nbsp;</span>
+          <Link className="credits__link" to="https://www.npmjs.com/package/vite-plugin-svgr">
+            vite-plugin-svgr
+          </Link>
         </li>
       </ul>
     </section>
