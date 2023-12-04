@@ -5,7 +5,7 @@ import { LanguageContext } from '../../contexts/languageContext.js';
 
 import Logo from '../Logo/Logo.jsx';
 import Menu from '../Menu/Menu.jsx';
-import SocialIcons from '../SocialIcons/SocialLinks.jsx';
+import SocialIcons from '../SocialLinks/SocialLinks.jsx';
 
 function Footer() {
   const language = useContext(LanguageContext);

@@ -3,7 +3,7 @@ import './Header.scss';
 
 import Logo from '../Logo/Logo.jsx';
 import Menu from '../Menu/Menu.jsx';
-import SocialLinks from '../SocialIcons/SocialLinks.jsx';
+import SocialLinks from '../SocialLinks/SocialLinks.jsx';
 
 function Header() {
   return (
