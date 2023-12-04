@@ -8,6 +8,7 @@
   flex-direction: column;
   overflow: hidden;
   color: var(--color-primary);
+  transition: all 0.5s;
 
   @media screen and (max-width: 1440px) {
     max-width: 350px;
@@ -90,6 +91,7 @@
       cursor: pointer;
       display: flex;
       gap: 10px;
+      transition: all 0.5s;
 
       @media screen and (max-width: 1440px) {
         font-size: 12px;
