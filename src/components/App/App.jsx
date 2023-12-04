@@ -17,12 +17,18 @@ import Credits from '../Credits/Credits.jsx';
 
 function App() {
   const localStoredLang = localStorage.getItem('lang');
-  //const localStoredColorTheme = JSON.parse(localStorage.getItem('currentTheme'));
-  const [language, setLanguage] = useState('localStoredLang');
+  const localStoredTheme = localStorage.getItem('theme');
+  const [language, setLanguage] = useState(localStoredLang);
+  const [theme, setTheme] = useState(localStoredTheme);
 
   useEffect(() => {
     if (!localStorage.getItem('lang')) {
       localStorage.setItem('lang', 'en');
+    }
+    setLanguage(languages[localStoredLang]);
+
+    if (!localStorage.getItem('theme')) {
+      localStorage.setItem('theme', 'dark');
     }
     setLanguage(languages[localStoredLang]);
   }, []);
