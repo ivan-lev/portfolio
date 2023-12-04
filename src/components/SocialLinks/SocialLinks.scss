@@ -9,12 +9,21 @@
   height: 30px;
   width: 30px;
 
+  &:hover > path {
+    fill: var(--color-icon-hover);
+  }
+
   @media screen and (max-width: 1440px) {
     height: 24px;
     width: 24px;
   }
 
-  path {
+  & > path {
     fill: var(--color-icon);
+    transition: all 0.5s;
   }
 }
+
+// .social-icon:hover > path {
+//   fill: red;
+// }
