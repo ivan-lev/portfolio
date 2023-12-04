@@ -28,7 +28,8 @@ export const languages = {
     creditsSite: 'This site was created using free template from ',
     creditsLogo: 'Logo was founded on',
     creditsTelegramLogo: 'Telegram icon from',
-    creditsVitePlugin: 'Convenient work with svg files is carried out using this package:'
+    creditsVitePlugin: 'Convenient work with svg files is carried out using this package:',
+    creditsSunMoonIcons: 'Nice sun and moon icons were founded here:'
   },
   ru: {
     name: 'ru',
@@ -55,6 +56,7 @@ export const languages = {
     creditsSite: 'Сайт был создан на основе этого шаблона из',
     creditsLogo: 'Логотип был взят здесь:',
     creditsTelegramLogo: 'Иконка телеграма отсюда:',
-    creditsVitePlugin: 'Удобная работа с svg файлами осуществлена посредством этого пакета:'
+    creditsVitePlugin: 'Удобная работа с svg файлами осуществлена посредством этого пакета:',
+    creditsSunMoonIcons: 'Красивые иконки солнца и луны для темизации были взяты из этой коллекции:'
   }
 };

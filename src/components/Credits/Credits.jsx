@@ -45,6 +45,15 @@ export default function Credits() {
             vite-plugin-svgr
           </Link>
         </li>
+        <li className="credits__list-element">
+          <span className="main__text">{language.creditsSunMoonIcons}&nbsp;</span>
+          <Link
+            className="credits__link"
+            to="https://www.svgrepo.com/collection/solar-outline-icons/"
+          >
+            Solar Outline Icons
+          </Link>
+        </li>
       </ul>
     </section>
   );
