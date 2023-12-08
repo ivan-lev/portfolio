@@ -4,6 +4,7 @@ import './App.scss';
 
 import { LanguageContext, languages } from '../../contexts/languageContext.js';
 
+import ToggleLanguageButton from '../ToggleLanguageButton/ToggleLanguageButton.jsx';
 import ToggleThemeButton from '../ToggleThemeButton/ToggleThemeButton.jsx';
 
 import Header from '../Header/Header.jsx';
@@ -30,22 +31,9 @@ function App() {
     }
   }, []);
 
-  const toggleLanguage = () => {
-    if (localStoredLang === 'en') {
-      localStorage.setItem('lang', 'ru');
-      setLanguage(languages['ru']);
-    }
-    if (localStoredLang === 'ru') {
-      localStorage.setItem('lang', 'en');
-      setLanguage(languages['en']);
-    }
-  };
-
   return (
     <div className="page">
-      <button className="toggle-language-button" onClick={toggleLanguage}>
-        {language.name === 'en' ? 'ru' : 'en'}
-      </button>
+      <ToggleLanguageButton language={localStoredLang} setLanguage={setLanguage} />
       <ToggleThemeButton theme={theme} setTheme={setTheme} />
       <LanguageContext.Provider value={language}>
         <Header />

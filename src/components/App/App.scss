@@ -18,24 +18,3 @@
     gap: 150px;
   }
 }
-
-.toggle-language-button {
-  position: fixed;
-  top: 50px;
-  left: 50px;
-  background-color: var(--bg-color-secondary);
-  border: 1px solid var(--bg-color-primary);
-  border-radius: 4px;
-  color: var(--color-primary);
-  cursor: pointer;
-  height: 25px;
-  min-width: 54px;
-  padding: 0 10px;
-  text-align: center;
-
-  &:hover {
-    border: 1px solid var(--bg-color-secondary);
-    background-color: var(--bg-color-primary);
-    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px;
-  }
-}
