@@ -5,11 +5,11 @@ import { languages } from '../../contexts/languageContext.js';
 
 export default function ToggleLanguageButton({ language, setLanguage }) {
   const toggleLanguage = () => {
-    if (language === 'en') {
+    if (language.name === 'en') {
       localStorage.setItem('lang', 'ru');
       setLanguage(languages['ru']);
     }
-    if (language === 'ru') {
+    if (language.name === 'ru') {
       localStorage.setItem('lang', 'en');
       setLanguage(languages['en']);
     }
