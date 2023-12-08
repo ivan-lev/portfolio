@@ -4,21 +4,25 @@
     position: fixed;
     top: 50px;
     left: 110px;
-    border: 0;
+    border: none;
     background: none;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    box-sizing: border-box;
     transition: all 0.5s;
 
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.2);
+    }
+
+    &:active {
+      transform: scale(0);
     }
 
     & path {
-      fill: #cccccc;
+      fill: var(--color-icon);
       transition: inherit;
-    }
-
-    &:hover path {
-      fill: #ffffff;
     }
   }
 

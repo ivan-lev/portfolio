@@ -21,6 +21,7 @@ export default function ToggleThemeButton({ theme, setTheme }) {
     elem.style.setProperty('--color-secondary', `var(--color-${newTheme}-secondary)`);
     elem.style.setProperty('--color-additional', `var(--color-${newTheme}-additional)`);
     elem.style.setProperty('--color-icon', `var(--color-${newTheme}-icon)`);
+    elem.style.setProperty('--color-icon-hover', `var(--color-${newTheme}-additional)`);
   }
 
   return (
