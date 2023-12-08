@@ -6,6 +6,7 @@ import { LanguageContext, languages } from '../../contexts/languageContext.js';
 
 import ToggleLanguageButton from '../ToggleLanguageButton/ToggleLanguageButton.jsx';
 import ToggleThemeButton from '../ToggleThemeButton/ToggleThemeButton.jsx';
+import setColorTheme from '../../utils/setColorTheme.js';
 
 import Header from '../Header/Header.jsx';
 import Main from '../Main/Main.jsx';
@@ -29,6 +30,7 @@ function App() {
     if (!localStorage.getItem('theme')) {
       localStorage.setItem('theme', 'dark');
     }
+    setColorTheme(theme);
   }, []);
 
   return (
