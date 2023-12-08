@@ -20,18 +20,19 @@ export const languages = {
     projectsSubtitle: 'Things I’ve built so far',
     projectCardPreviewLinkText: 'Live Preview',
     projectCardGithubLinkText: 'View Code',
-    footerText: 'Designed and built by Ivan Lev with Love & Chinese Fine Teas',
+    footerText: 'Designed and built by Ivan Lev with Love & Cup of Fine Chinese Tea',
     aboutmeTitle: 'About me',
     aboutmeInfo:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia iste blanditiis, explicabo sapiente molestias et sint facilis officiis aperiam nihil nesciunt aut similique. Illum, tempore facere. Adipisci nesciunt nostrum repudiandae?',
     contactText: 'For any questions please mail me:',
     workExperience: 'Work experience',
     education: 'Education',
-    creditsSite: 'This site was created using free template from ',
+    creditsSite: 'This site was created using free template from',
     creditsLogo: 'Logo was founded on',
     creditsTelegramLogo: 'Telegram icon from',
     creditsVitePlugin: 'Convenient work with svg files is carried out using this package:',
-    creditsSunMoonIcons: 'Nice sun and moon icons were founded here:'
+    creditsSunMoonIcons: 'Nice sun and moon icons were founded here:',
+    creditsCssCustomProps: 'Great article about custom CSS properties:'
   },
   ru: {
     name: 'ru',
@@ -61,6 +62,8 @@ export const languages = {
     creditsLogo: 'Логотип был взят здесь:',
     creditsTelegramLogo: 'Иконка телеграма отсюда:',
     creditsVitePlugin: 'Удобная работа с svg файлами осуществлена посредством этого пакета:',
-    creditsSunMoonIcons: 'Красивые иконки солнца и луны для темизации были взяты из этой коллекции:'
+    creditsSunMoonIcons:
+      'Красивые иконки солнца и луны для темизации были взяты из этой коллекции:',
+    creditsCssCustomProps: 'Отличная статья о кастомных CSS-свойствах:'
   }
 };
