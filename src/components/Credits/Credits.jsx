@@ -14,7 +14,7 @@ export default function Credits() {
     <section className="credits">
       <ul className="credits__list">
         <li className="credits__list-element">
-          <span className="main__text">{language.creditsSite}&nbsp;</span>
+          <span className="credits__text">{language.creditsSite}&nbsp;</span>
           <Link
             className="credits__link"
             to="https://www.figma.com/file/WrsiAQStgOWMzBWLzPHDAi/Developer-Portfolio-Design-(Community)?type=design&t=hRTNcG4J9JY8YIR6-6"
@@ -23,14 +23,14 @@ export default function Credits() {
           </Link>
         </li>
         <li className="credits__list-element">
-          <span className="main__text">{language.creditsLogo}&nbsp;</span>
+          <span className="credits__text">{language.creditsLogo}&nbsp;</span>
           <Link className="credits__link" to="https://www.flaticon.com/free-icon/coding_1159385">
             Flaticon.com
           </Link>
           <img className="credits__image" src={logo}></img>
         </li>
         <li className="credits__list-element">
-          <span className="main__text">{language.creditsTelegramLogo}&nbsp;</span>
+          <span className="credits__text">{language.creditsTelegramLogo}&nbsp;</span>
           <Link
             className="credits__link"
             to="https://icons8.com/icon/QP6ADhc43z2T/telegram#:~:text=look%20like%20this%3A-,Telegram,-icon%20by%20Icons8"
@@ -40,13 +40,13 @@ export default function Credits() {
           <img className="credits__image" src={telegramIcon}></img>
         </li>
         <li className="credits__list-element">
-          <span className="main__text">{language.creditsVitePlugin}&nbsp;</span>
+          <span className="credits__text">{language.creditsVitePlugin}&nbsp;</span>
           <Link className="credits__link" to="https://www.npmjs.com/package/vite-plugin-svgr">
             vite-plugin-svgr
           </Link>
         </li>
         <li className="credits__list-element">
-          <span className="main__text">{language.creditsSunMoonIcons}&nbsp;</span>
+          <span className="credits__text">{language.creditsSunMoonIcons}&nbsp;</span>
           <Link
             className="credits__link"
             to="https://www.svgrepo.com/collection/solar-outline-icons/"
@@ -55,7 +55,7 @@ export default function Credits() {
           </Link>
         </li>
         <li className="credits__list-element">
-          <span className="main__text">{language.creditsCssCustomProps}&nbsp;</span>
+          <span className="credits__text">{language.creditsCssCustomProps}&nbsp;</span>
           <Link
             className="credits__link"
             to="https://tproger.ru/articles/custom-properties-in-css-part-1"
