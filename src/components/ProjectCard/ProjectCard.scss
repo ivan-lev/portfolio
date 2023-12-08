@@ -16,6 +16,7 @@
   }
 
   &-image {
+    flex-shrink: 0;
     height: 260px;
     object-fit: cover;
 
