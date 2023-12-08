@@ -3,6 +3,8 @@ import './ProjectCard.scss';
 
 import { LanguageContext } from '../../contexts/languageContext.js';
 
+import filler from '../../images/filler.png';
+
 export default function ProjectCard({
   preview,
   title,
@@ -15,7 +17,11 @@ export default function ProjectCard({
 
   return (
     <li className="project-card">
-      <img src={preview} alt={`Preview of project ${title}`} className="project-card-image"></img>
+      <img
+        src={preview ? preview : filler}
+        alt={`Preview of project ${title}`}
+        className="project-card-image"
+      ></img>
       <div className="project-card-content">
         <h3 className="project-card-title">{title ? title : 'Title here'}</h3>
         <p className="project-card-text">

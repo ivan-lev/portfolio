@@ -17,7 +17,6 @@ import redux from '../../images/icon-tech-redux.svg';
 import ProjectCard from '../ProjectCard/ProjectCard.jsx';
 import TechElement from '../TechElement/TechElement.jsx';
 
-import filler from '../../images/filler.png';
 import howToLearn from '../../images/project-previews/how-to-learn.jpg';
 import russianTravel from '../../images/project-previews/russian-travel.jpg';
 import mesto from '../../images/project-previews/mesto.jpg';
@@ -92,8 +91,8 @@ function Main() {
             githubLink="https://github.com/ivan-lev/how-to-learn/"
           />
 
-          <ProjectCard preview={filler} />
-          <ProjectCard preview={filler} />
+          <ProjectCard />
+          <ProjectCard />
         </ul>
       </section>
     </main>
