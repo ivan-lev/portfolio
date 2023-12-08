@@ -14,9 +14,14 @@ import nodejs from '../../images/icon-tech-nodejs.svg';
 import react from '../../images/icon-tech-react.svg';
 import redux from '../../images/icon-tech-redux.svg';
 
-import filler from '../../images/filler.png';
 import ProjectCard from '../ProjectCard/ProjectCard.jsx';
 import TechElement from '../TechElement/TechElement.jsx';
+
+import filler from '../../images/filler.png';
+import howToLearn from '../../images/project-previews/how-to-learn.jpg';
+import russianTravel from '../../images/project-previews/russian-travel.jpg';
+import mesto from '../../images/project-previews/mesto.jpg';
+import portfolio from '../../images/project-previews/portfolio.jpg';
 
 function Main() {
   const language = useContext(LanguageContext);
@@ -54,12 +59,41 @@ function Main() {
         <h2 className="main__title">{language.projectsTitle}</h2>
         <p className="main__subtitle">{language.projectsSubtitle}</p>
         <ul className="main__projects-list">
-          <ProjectCard filler={filler} />
-          <ProjectCard filler={filler} />
-          <ProjectCard filler={filler} />
-          <ProjectCard filler={filler} />
-          <ProjectCard filler={filler} />
-          <ProjectCard filler={filler} />
+          <ProjectCard
+            preview={portfolio}
+            title="Сайт-портфолио"
+            description="Этот сайт - одностраничное приложение, созданное на React и собранное при помощи Vite. Сайт использует локальное хранилище для сохранения настроек языка и цветовой темы, а также контекст для изменения данных"
+            stack="HTML, SCSS, JavaScript, React, Git"
+            previewLink="#"
+            githubLink="https://github.com/ivan-lev/portfolio"
+          />
+          <ProjectCard
+            preview={mesto}
+            title="Mesto"
+            description="Проект о путешественниках. В проекте используется библиотека React, веб-приложение делает api-запросы на сервер и получает информацию о пользователе и карточках."
+            stack="HTML, CSS, JavaScript, React, Git"
+            previewLink="https://ivan-lev.github.io/mesto-react/"
+            githubLink="https://github.com/ivan-lev/mesto-react/"
+          />
+          <ProjectCard
+            preview={russianTravel}
+            title="Путешествие по России"
+            description="Проект о путшествиях по России. Адаптивная вёрстка, применениее flexbox и grid."
+            stack="HTML, СSS, Git"
+            previewLink="https://ivan-lev.github.io/russian-travel/"
+            githubLink="https://github.com/ivan-lev/russian-travel/"
+          />
+          <ProjectCard
+            preview={howToLearn}
+            title="Научиться учиться"
+            description="Простой проект с адаптивной вёрсткой и анимацией."
+            stack="HTML, CSS, BEM, Git"
+            previewLink="https://ivan-lev.github.io/how-to-learn/"
+            githubLink="https://github.com/ivan-lev/how-to-learn/"
+          />
+
+          <ProjectCard preview={filler} />
+          <ProjectCard preview={filler} />
         </ul>
       </section>
     </main>
