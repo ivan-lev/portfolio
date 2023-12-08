@@ -55,12 +55,12 @@ export default function Credits() {
           </Link>
         </li>
         <li className="credits__list-element">
-          <span className="main__text">Отличная статья о&nbsp;</span>
+          <span className="main__text">{language.creditsCssCustomProps}&nbsp;</span>
           <Link
             className="credits__link"
-            to="https://www.svgrepo.com/collection/solar-outline-icons/"
+            to="https://tproger.ru/articles/custom-properties-in-css-part-1"
           >
-            кастомных css-свойствах и темизации
+            Tproger
           </Link>
         </li>
       </ul>
