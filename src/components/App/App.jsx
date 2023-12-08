@@ -35,8 +35,11 @@ function App() {
 
   return (
     <div className="page">
-      <ToggleLanguageButton language={localStoredLang} setLanguage={setLanguage} />
-      <ToggleThemeButton theme={theme} setTheme={setTheme} />
+      <div className="toggleButtons">
+        <ToggleLanguageButton language={language} setLanguage={setLanguage} />
+        <ToggleThemeButton theme={theme} setTheme={setTheme} />
+      </div>
+
       <LanguageContext.Provider value={language}>
         <Header />
         <Routes>

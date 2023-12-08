@@ -18,3 +18,12 @@
     gap: 150px;
   }
 }
+
+.toggleButtons {
+  position: fixed;
+  top: 50px;
+  left: 110px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
