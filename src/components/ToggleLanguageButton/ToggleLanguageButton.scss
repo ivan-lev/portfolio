@@ -1,0 +1,22 @@
+.toggle-language-button {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  color: var(--color-secondary);
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  transition: all 0.5s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0);
+  }
+}
