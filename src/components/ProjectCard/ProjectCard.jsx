@@ -1,23 +1,35 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './ProjectCard.scss';
 
-export default function ProjectCard(props) {
+import { LanguageContext } from '../../contexts/languageContext.js';
+
+export default function ProjectCard({
+  preview,
+  title,
+  stack,
+  description,
+  previewLink,
+  githubLink
+}) {
+  const language = useContext(LanguageContext);
+
   return (
     <li className="project-card">
-      <img src={props.filler} alt="Some of my projects" className="project-card-image"></img>
+      <img src={preview} alt={`Preview of project ${title}`} className="project-card-image"></img>
       <div className="project-card-content">
-        <h3 className="project-card-title">Project Title goes here</h3>
+        <h3 className="project-card-title">{title ? title : 'Title here'}</h3>
         <p className="project-card-text">
-          This is sample project description random things are here in description This is sample
-          project lorem ipsum generator for dummy content
+          {description
+            ? description
+            : 'This is a sample project description with random things are here in description.'}
         </p>
-        <p className="project-card-tech-stack">HTML , JavaScript, SASS, React</p>
+        <p className="project-card-tech-stack">{stack}</p>
         <p className="project-card-links">
-          <a href="#" className="project-card-link-preview">
-            Live Preview
+          <a href={previewLink} className="project-card-link-preview">
+            {language.projectCardPreviewLinkText}
           </a>
-          <a href="#" className="project-card-link-github">
-            View Code
+          <a href={githubLink} className="project-card-link-github">
+            {language.projectCardGithubLinkText}
           </a>
         </p>
       </div>
