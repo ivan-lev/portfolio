@@ -6,16 +6,16 @@ import { LanguageContext } from '../../contexts/languageContext.js';
 import ExperienceElement from '../ExperienceElement/ExperienceElement.jsx';
 
 export default function About() {
-  const language = useContext(LanguageContext);
+  const translation = useContext(LanguageContext);
 
   return (
     <section className="about">
       <article>
-        <h2 className="main__title">{language.aboutmeTitle}</h2>
-        <p className="main__text">{language.aboutmeInfo}</p>
+        <h2 className="main__title">{translation.aboutmeTitle}</h2>
+        <p className="main__text">{translation.aboutmeInfo}</p>
       </article>
       <article>
-        <h2 className="main__title">{language.workExperience}</h2>
+        <h2 className="main__title">{translation.workExperience}</h2>
         <ExperienceElement
           position="Junior Web Developer"
           type="Full Time"
@@ -32,7 +32,7 @@ export default function About() {
         />
       </article>
       <article>
-        <h2 className="main__title">{language.education}</h2>
+        <h2 className="main__title">{translation.education}</h2>
         <ExperienceElement
           position="Junior Web Developer"
           type="Full Time"

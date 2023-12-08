@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.scss';
 
-import { LanguageContext, languages } from '../../contexts/languageContext.js';
+import { LanguageContext, translations } from '../../contexts/languageContext.js';
 
 import ToggleLanguageButton from '../ToggleLanguageButton/ToggleLanguageButton.jsx';
 import ToggleThemeButton from '../ToggleThemeButton/ToggleThemeButton.jsx';
@@ -16,16 +16,16 @@ import Contact from '../Contact/Contact.jsx';
 import Credits from '../Credits/Credits.jsx';
 
 function App() {
-  const localStoredLang = localStorage.getItem('lang');
+  const localStoredLanguage = localStorage.getItem('lang');
   const localStoredTheme = localStorage.getItem('theme');
-  const [language, setLanguage] = useState(localStoredLang);
+  const [translation, setTranslation] = useState(localStoredLanguage);
   const [theme, setTheme] = useState(localStoredTheme);
 
   useEffect(() => {
     if (!localStorage.getItem('lang')) {
       localStorage.setItem('lang', 'en');
     }
-    setLanguage(languages[localStoredLang]);
+    setTranslation(translations[localStoredLanguage]);
 
     if (!localStorage.getItem('theme')) {
       localStorage.setItem('theme', 'dark');
@@ -36,11 +36,11 @@ function App() {
   return (
     <div className="page">
       <div className="toggleButtons">
-        <ToggleLanguageButton language={language} setLanguage={setLanguage} />
+        <ToggleLanguageButton translation={translation} setTranslation={setTranslation} />
         <ToggleThemeButton theme={theme} setTheme={setTheme} />
       </div>
 
-      <LanguageContext.Provider value={language}>
+      <LanguageContext.Provider value={translation}>
         <Header />
         <Routes>
           <Route path="/" element={<Main />} />

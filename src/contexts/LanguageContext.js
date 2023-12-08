@@ -2,7 +2,7 @@ import React from 'react';
 
 export const LanguageContext = React.createContext();
 
-export const languages = {
+export const translations = {
   en: {
     name: 'en',
     menuHome: 'Home',
