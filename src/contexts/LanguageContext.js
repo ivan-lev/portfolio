@@ -18,6 +18,8 @@ export const languages = {
     technologies: 'Technologies I’ve been working with recently',
     projectsTitle: 'Projects',
     projectsSubtitle: 'Things I’ve built so far',
+    projectCardPreviewLinkText: 'Live Preview',
+    projectCardGithubLinkText: 'View Code',
     footerText: 'Designed and built by Ivan Lev with Love & Chinese Fine Teas',
     aboutmeTitle: 'About me',
     aboutmeInfo:
@@ -46,6 +48,8 @@ export const languages = {
     technologies: 'Инструменты, которыми я обычно пользуюсь',
     projectsTitle: 'Проекты',
     projectsSubtitle: 'Вещи, которые я создал',
+    projectCardPreviewLinkText: 'Проект',
+    projectCardGithubLinkText: 'Посмотреть код',
     footerText: 'Разработано Иваном Львом с любовью и чашечкой китайского чая',
     aboutmeTitle: 'Обо мне',
     aboutmeInfo:
