@@ -17,6 +17,26 @@
     max-width: 950px;
     gap: 150px;
   }
+
+  @media screen and (max-width: 1280px) {
+    max-width: 800px;
+    gap: 130px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    max-width: 650px;
+    gap: 110px;
+  }
+
+  @media screen and (max-width: 800px) {
+    max-width: 500px;
+    gap: 90px;
+  }
+
+  @media screen and (max-width: 600px) {
+    max-width: 500px;
+    gap: 70px;
+  }
 }
 
 .toggleButtons {
