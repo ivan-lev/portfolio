@@ -1,14 +1,14 @@
 import React, { useContext } from 'react';
 import './Footer.scss';
 
-import { LanguageContext } from '../../contexts/languageContext.js';
+import { TranslationContext } from '../../contexts/translationContext.js';
 
 import Logo from '../Logo/Logo.jsx';
 import Menu from '../Menu/Menu.jsx';
 import SocialIcons from '../SocialLinks/SocialLinks.jsx';
 
 function Footer() {
-  const language = useContext(LanguageContext);
+  const translation = useContext(TranslationContext);
 
   return (
     <footer className="footer">
@@ -23,7 +23,7 @@ function Footer() {
       <div className="footer__divider" />
       <div className="footer__bottom">
         <Menu />
-        <div className="footer__bottom-credits">{language?.footerText}</div>
+        <div className="footer__bottom-credits">{translation?.footerText}</div>
       </div>
     </footer>
   );

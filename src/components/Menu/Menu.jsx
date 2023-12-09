@@ -2,31 +2,31 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import './Menu.scss';
 
-import { LanguageContext } from '../../contexts/languageContext.js';
+import { TranslationContext } from '../../contexts/translationContext.js';
 
 export default function Menu() {
-  const language = useContext(LanguageContext);
+  const translation = useContext(TranslationContext);
 
   return (
     <menu className="menu__content">
       <li className="menu__element">
         <Link className="menu__link" to="/">
-          {language?.menuHome}
+          {translation?.menuHome}
         </Link>
       </li>
       <li className="menu__element">
         <Link className="menu__link" to="/about">
-          {language?.menuAbout}
+          {translation?.menuAbout}
         </Link>
       </li>
       <li className="menu__element">
         <Link className="menu__link" to="/contact">
-          {language?.menuContact}
+          {translation?.menuContact}
         </Link>
       </li>
       <li className="menu__element">
         <Link className="menu__link" to="/credits">
-          {language?.menuCredits}
+          {translation?.menuCredits}
         </Link>
       </li>
     </menu>

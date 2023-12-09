@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import './Main.scss';
 
-import { LanguageContext } from '../../contexts/languageContext.js';
+import { TranslationContext } from '../../contexts/translationContext.js';
 
 import avatar from '../../images/avatar.jpg';
 import sass from '../../images/icon-tech-sass.svg';
@@ -23,7 +23,7 @@ import mesto from '../../images/project-previews/mesto.jpg';
 import portfolio from '../../images/project-previews/portfolio.jpg';
 
 function Main() {
-  const language = useContext(LanguageContext);
+  const language = useContext(TranslationContext);
 
   return (
     <main className="main">

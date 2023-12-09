@@ -2,13 +2,13 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import './Credits.scss';
 
-import { LanguageContext } from '../../contexts/languageContext.js';
+import { TranslationContext } from '../../contexts/translationContext.js';
 
 import logo from '../../images/favicon.png';
 import telegramIcon from '../../images/icon-social-telegram.svg';
 
 export default function Credits() {
-  const translation = useContext(LanguageContext);
+  const translation = useContext(TranslationContext);
 
   return (
     <section className="credits">

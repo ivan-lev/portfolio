@@ -1,12 +1,12 @@
 import React, { useContext } from 'react';
 import './About.scss';
 
-import { LanguageContext } from '../../contexts/languageContext.js';
+import { TranslationContext } from '../../contexts/translationContext.js';
 
 import ExperienceElement from '../ExperienceElement/ExperienceElement.jsx';
 
 export default function About() {
-  const translation = useContext(LanguageContext);
+  const translation = useContext(TranslationContext);
 
   return (
     <section className="about">

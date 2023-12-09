@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import './ProjectCard.scss';
 
-import { LanguageContext } from '../../contexts/languageContext.js';
+import { TranslationContext } from '../../contexts/translationContext.js';
 
 import filler from '../../images/filler.png';
 
@@ -13,7 +13,7 @@ export default function ProjectCard({
   previewLink,
   githubLink
 }) {
-  const language = useContext(LanguageContext);
+  const translation = useContext(TranslationContext);
 
   return (
     <li className="project-card">
@@ -32,10 +32,10 @@ export default function ProjectCard({
         <p className="project-card-tech-stack">{stack}</p>
         <p className="project-card-links">
           <a href={previewLink} className="project-card-link-preview">
-            {language?.projectCardPreviewLinkText}
+            {translation?.projectCardPreviewLinkText}
           </a>
           <a href={githubLink} className="project-card-link-github">
-            {language?.projectCardGithubLinkText}
+            {translation?.projectCardGithubLinkText}
           </a>
         </p>
       </div>

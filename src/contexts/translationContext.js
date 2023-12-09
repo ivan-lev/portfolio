@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const LanguageContext = React.createContext();
+export const TranslationContext = React.createContext();
 
 export const translations = {
   en: {

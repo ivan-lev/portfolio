@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 import './Contact.scss';
 
-import { LanguageContext } from '../../contexts/languageContext.js';
+import { TranslationContext } from '../../contexts/translationContext.js';
 
 export default function Contact() {
-  const translation = useContext(LanguageContext);
+  const translation = useContext(TranslationContext);
 
   return (
     <section>

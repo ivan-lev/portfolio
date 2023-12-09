@@ -1,23 +1,23 @@
 import React from 'react';
 import './ToggleLanguageButton.scss';
 
-import { translations } from '../../contexts/languageContext.js';
+import { translations } from '../../contexts/translationContext.js';
 
-export default function ToggleLanguageButton({ translation, setTranslation }) {
+export default function ToggleLanguageButton({ language, setLanguage }) {
   const toggleLanguage = () => {
-    if (translation?.name === 'en') {
+    if (language === 'en') {
       localStorage.setItem('lang', 'ru');
-      setTranslation(translations['ru']);
+      setLanguage('ru');
     }
-    if (translation?.name === 'ru') {
+    if (language === 'ru') {
       localStorage.setItem('lang', 'en');
-      setTranslation(translations['en']);
+      setLanguage('en');
     }
   };
 
   return (
     <button className="toggle-language-button" onClick={toggleLanguage}>
-      {translation?.name === 'en' ? 'RU' : 'EN'}
+      {language === 'en' ? 'RU' : 'EN'}
     </button>
   );
 }
