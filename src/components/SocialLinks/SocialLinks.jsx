@@ -11,14 +11,14 @@ import TelegramIcon from '../../images/icon-social-telegram.svg?react';
 export default function SocialLinks() {
   return (
     <div className="social-links">
-      <Link to="https://github.com/ivan-lev">
-        <GithubIcon className="social-icon" fill="red" />
+      <Link className="social-icon" to="https://github.com/ivan-lev">
+        <GithubIcon />
       </Link>
-      <Link to="#">
-        <LinkedInIcon className="social-icon" />
+      <Link className="social-icon" to="#">
+        <LinkedInIcon />
       </Link>
-      <Link to="https://t.me/ivanlev">
-        <TelegramIcon className="social-icon" />
+      <Link className="social-icon" to="https://t.me/ivanlev">
+        <TelegramIcon />
       </Link>
     </div>
   );
