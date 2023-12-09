@@ -27,12 +27,12 @@ export const translations = {
     contactText: 'For any questions please mail me:',
     workExperience: 'Work experience',
     education: 'Education',
-    creditsSite: 'This site was created using free template from',
-    creditsLogo: 'Logo was founded on',
-    creditsTelegramLogo: 'Telegram icon from',
-    creditsVitePlugin: 'Convenient work with svg files is carried out using this package:',
-    creditsSunMoonIcons: 'Nice sun and moon icons were founded here:',
-    creditsCssCustomProps: 'Great article about custom CSS properties:'
+    creditsSite: 'This site was created using free template from ',
+    creditsLogo: 'Logo was founded on ',
+    creditsTelegramLogo: 'Telegram icon from ',
+    creditsVitePlugin: 'Convenient work with svg files is carried out using this package: ',
+    creditsSunMoonIcons: 'Nice sun and moon icons were founded here: ',
+    creditsCssCustomProps: 'Great article about custom CSS properties: '
   },
   ru: {
     name: 'ru',
@@ -55,15 +55,15 @@ export const translations = {
     aboutmeTitle: 'Обо мне',
     aboutmeInfo:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia iste blanditiis, explicabo sapiente molestias et sint facilis officiis aperiam nihil nesciunt aut similique. Illum, tempore facere. Adipisci nesciunt nostrum repudiandae?',
-    contactText: 'Если у вас есть вопросы, пишите на этот адрес:',
+    contactText: 'Если у вас есть вопросы, пишите на этот адрес: ',
     workExperience: 'Опыт работы',
     education: 'Образование',
-    creditsSite: 'Сайт был создан на основе этого шаблона из',
-    creditsLogo: 'Логотип был взят здесь:',
-    creditsTelegramLogo: 'Иконка телеграма отсюда:',
-    creditsVitePlugin: 'Удобная работа с svg файлами осуществлена посредством этого пакета:',
+    creditsSite: 'Сайт был создан на основе этого шаблона из ',
+    creditsLogo: 'Логотип был взят здесь: ',
+    creditsTelegramLogo: 'Иконка телеграма отсюда: ',
+    creditsVitePlugin: 'Удобная работа с svg файлами осуществлена посредством этого пакета: ',
     creditsSunMoonIcons:
-      'Красивые иконки солнца и луны для темизации были взяты из этой коллекции:',
-    creditsCssCustomProps: 'Отличная статья о кастомных CSS-свойствах:'
+      'Красивые иконки солнца и луны для темизации были взяты из этой коллекции: ',
+    creditsCssCustomProps: 'Отличная статья о кастомных CSS-свойствах: '
   }
 };
