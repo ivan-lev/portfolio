@@ -29,7 +29,7 @@ function Main() {
     <main className="main">
       <section className="main__hero">
         <div className="main__hero-text">
-          {language?.heroTextFirst},
+          {language?.heroTextFirst}
           <br />
           {language?.heroTextSecond}
           <br />
