@@ -10,7 +10,7 @@ export default function Menu() {
   return (
     <menu className="menu__content">
       <li className="menu__element">
-        <Link className="menu__link" to="/">
+        <Link className="menu__link" to="/portfolio">
           {translation?.menuHome}
         </Link>
       </li>
