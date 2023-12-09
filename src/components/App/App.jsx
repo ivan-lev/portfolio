@@ -47,7 +47,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/credits" element={<Credits />} />
-          <Route path="*" element={<Navigate to="/" />} />
+          <Route path="*" element={<Navigate to="/portfolio" />} />
         </Routes>
         <Footer />
       </TranslationContext.Provider>
