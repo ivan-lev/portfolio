@@ -31,7 +31,7 @@ function App() {
       localStorage.setItem('theme', 'dark');
     }
     handleSetColorTheme(theme);
-  }, []);
+  }, [theme]);
 
   return (
     <div className="page">
