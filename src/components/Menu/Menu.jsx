@@ -11,22 +11,22 @@ export default function Menu() {
     <menu className="menu__content">
       <li className="menu__element">
         <Link className="menu__link" to="/">
-          {language.menuHome}
+          {language?.menuHome}
         </Link>
       </li>
       <li className="menu__element">
         <Link className="menu__link" to="/about">
-          {language.menuAbout}
+          {language?.menuAbout}
         </Link>
       </li>
       <li className="menu__element">
         <Link className="menu__link" to="/contact">
-          {language.menuContact}
+          {language?.menuContact}
         </Link>
       </li>
       <li className="menu__element">
         <Link className="menu__link" to="/credits">
-          {language.menuCredits}
+          {language?.menuCredits}
         </Link>
       </li>
     </menu>

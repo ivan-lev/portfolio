@@ -29,19 +29,19 @@ function Main() {
     <main className="main">
       <section className="main__hero">
         <div className="main__hero-text">
-          {language.heroTextFirst},
+          {language?.heroTextFirst},
           <br />
-          {language.heroTextSecond}
+          {language?.heroTextSecond}
           <br />
-          <span className="main__hero-name">{language.heroName}</span>
+          <span className="main__hero-name">{language?.heroName}</span>
           <br />
-          {language.heroTextThird}
+          {language?.heroTextThird}
         </div>
-        <img className="main__avatar" src={avatar} alt={language.avatarAlt}></img>
+        <img className="main__avatar" src={avatar} alt={language?.avatarAlt}></img>
       </section>
       <section className="main__stack">
-        <h2 className="main__title">{language.techStack}</h2>
-        <p className="main__subtitle">{language.technologies}</p>
+        <h2 className="main__title">{language?.techStack}</h2>
+        <p className="main__subtitle">{language?.technologies}</p>
         <ul className="main__stack-list">
           <TechElement logo={html} alt="HTML logo" />
           <TechElement logo={css} alt="CSS logo" />
@@ -55,8 +55,8 @@ function Main() {
         </ul>
       </section>
       <section className="projects">
-        <h2 className="main__title">{language.projectsTitle}</h2>
-        <p className="main__subtitle">{language.projectsSubtitle}</p>
+        <h2 className="main__title">{language?.projectsTitle}</h2>
+        <p className="main__subtitle">{language?.projectsSubtitle}</p>
         <ul className="main__projects-list">
           <ProjectCard
             preview={portfolio}

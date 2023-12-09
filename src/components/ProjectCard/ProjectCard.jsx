@@ -32,10 +32,10 @@ export default function ProjectCard({
         <p className="project-card-tech-stack">{stack}</p>
         <p className="project-card-links">
           <a href={previewLink} className="project-card-link-preview">
-            {language.projectCardPreviewLinkText}
+            {language?.projectCardPreviewLinkText}
           </a>
           <a href={githubLink} className="project-card-link-github">
-            {language.projectCardGithubLinkText}
+            {language?.projectCardGithubLinkText}
           </a>
         </p>
       </div>

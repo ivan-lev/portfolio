@@ -18,7 +18,7 @@ import Credits from '../Credits/Credits.jsx';
 function App() {
   const localStoredLanguage = localStorage.getItem('lang');
   const localStoredTheme = localStorage.getItem('theme');
-  const [translation, setTranslation] = useState(localStoredLanguage);
+  const [translation, setTranslation] = useState(translations.localStoredLanguage);
   const [theme, setTheme] = useState(localStoredTheme);
 
   useEffect(() => {

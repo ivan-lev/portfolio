@@ -23,7 +23,7 @@ function Footer() {
       <div className="footer__divider" />
       <div className="footer__bottom">
         <Menu />
-        <div className="footer__bottom-credits">{language.footerText}</div>
+        <div className="footer__bottom-credits">{language?.footerText}</div>
       </div>
     </footer>
   );
