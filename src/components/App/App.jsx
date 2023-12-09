@@ -43,7 +43,7 @@ function App() {
       <TranslationContext.Provider value={translations[lang]}>
         <Header />
         <Routes>
-          <Route path="/" element={<Main />} />
+          <Route path="/portfolio" element={<Main />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/credits" element={<Credits />} />
