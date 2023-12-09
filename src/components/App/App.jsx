@@ -29,7 +29,11 @@ function App() {
 
     if (!localStorage.getItem('theme')) {
       localStorage.setItem('theme', 'dark');
+      setTheme('dark');
     }
+  }, []);
+
+  useEffect(() => {
     handleSetColorTheme(theme);
   }, [theme]);
 
