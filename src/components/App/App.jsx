@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import './App.scss';
 
 import { TranslationContext, translations } from '../../contexts/translationContext.js';
@@ -43,11 +43,11 @@ function App() {
       <TranslationContext.Provider value={translations[lang]}>
         <Header />
         <Routes>
-          <Route path="/portfolio" element={<Main />}>
-            <Route path="about" element={<About />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="credits" element={<Credits />} />
-          </Route>
+          <Route path="/" element={<Main />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/credits" element={<Credits />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
       </TranslationContext.Provider>
