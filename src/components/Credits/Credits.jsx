@@ -31,11 +31,8 @@ export default function Credits() {
         </li>
         <li className="credits__list-element">
           <span className="credits__text">{translation.creditsTelegramLogo}</span>
-          <Link
-            className="credits__link"
-            to="https://icons8.com/icon/QP6ADhc43z2T/telegram#:~:text=look%20like%20this%3A-,Telegram,-icon%20by%20Icons8"
-          >
-            Freepik.com
+          <Link className="credits__link" to="https://www.svgrepo.com/svg/378466/telegram-fill">
+            Svgrepo.com
           </Link>
           <img className="credits__image" src={telegramIcon}></img>
         </li>
@@ -67,7 +64,7 @@ export default function Credits() {
           <span className="credits__text">{translation.creditsBurgers}</span>
           <Link
             className="credits__link"
-            to="https://www.svgrepo.com/collection/start-universal-tiny-oval-icons/"
+            to="https://www.svgrepo.com/collection/nataicons-oval-tiny-line-icons/"
           >
              SvgRepo.com
           </Link>
