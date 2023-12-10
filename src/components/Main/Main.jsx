@@ -90,9 +90,6 @@ function Main() {
             previewLink="https://ivan-lev.github.io/how-to-learn/"
             githubLink="https://github.com/ivan-lev/how-to-learn/"
           />
-
-          <ProjectCard />
-          <ProjectCard />
         </ul>
       </section>
     </main>
