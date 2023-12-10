@@ -12,25 +12,25 @@ import TechElement from '../TechElement/TechElement.jsx';
 import { techStack } from '../../variables/techStack.js';
 
 function Main() {
-  const language = useContext(TranslationContext);
+  const translation = useContext(TranslationContext);
 
   return (
     <main className="main">
       <section className="main__hero">
         <div className="main__hero-text">
-          {language?.heroTextFirst}
+          {translation?.heroTextFirst}
           <br />
-          {language?.heroTextSecond}
+          {translation?.heroTextSecond}
           <br />
-          <span className="main__hero-name">{language?.heroName}</span>
+          <span className="main__hero-name">{translation?.heroName}</span>
           <br />
-          {language?.heroTextThird}
+          {translation?.heroTextThird}
         </div>
-        <img className="main__avatar" src={avatar} alt={language?.avatarAlt}></img>
+        <img className="main__avatar" src={avatar} alt={translation?.avatarAlt}></img>
       </section>
       <section className="main__stack">
-        <h2 className="main__title">{language?.techStack}</h2>
-        <p className="main__subtitle">{language?.technologies}</p>
+        <h2 className="main__title">{translation?.techStack}</h2>
+        <p className="main__subtitle">{translation?.technologies}</p>
         <ul className="main__stack-list">
           {techStack.map(({ logo, alt }) => (
             <TechElement key={alt} logo={logo} alt={alt} />
@@ -38,8 +38,8 @@ function Main() {
         </ul>
       </section>
       <section className="projects">
-        <h2 className="main__title">{language?.projectsTitle}</h2>
-        <p className="main__subtitle">{language?.projectsSubtitle}</p>
+        <h2 className="main__title">{translation?.projectsTitle}</h2>
+        <p className="main__subtitle">{translation?.projectsSubtitle}</p>
         <ul className="main__projects-list">
           {projects.map(({ id, preview, title, description, stack, link, ghLink }) => (
             <ProjectCard
