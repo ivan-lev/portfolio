@@ -1,8 +1,6 @@
 import React from 'react';
 import './ToggleLanguageButton.scss';
 
-import { translations } from '../../contexts/translationContext.js';
-
 export default function ToggleLanguageButton({ language, setLanguage }) {
   const toggleLanguage = () => {
     if (language === 'en') {
