@@ -63,6 +63,15 @@ export default function Credits() {
             Tproger
           </Link>
         </li>
+        <li className="credits__list-element">
+          <span className="credits__text">{translation.creditsBurgers}</span>
+          <Link
+            className="credits__link"
+            to="https://www.svgrepo.com/collection/start-universal-tiny-oval-icons/"
+          >
+             SvgRepo.com
+          </Link>
+        </li>
       </ul>
     </section>
   );
