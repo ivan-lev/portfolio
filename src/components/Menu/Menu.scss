@@ -42,6 +42,18 @@
 
   &__elements {
     display: flex;
+    gap: 50px;
+
+    @media screen and (max-width: 1440px) {
+      gap: 45px;
+    }
+
+    @media screen and (max-width: 1280px) {
+      gap: 40px;
+    }
+    @media screen and (max-width: 1024px) {
+      gap: 30px;
+    }
 
     @media screen and (max-width: 800px) {
       display: none;

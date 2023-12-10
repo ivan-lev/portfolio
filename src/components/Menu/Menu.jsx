@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import './Menu.scss';
 
-import BurgerClosedIcon from '../../images/icon-burger.svg?react';
+import BurgerClosedIcon from '../../images/icon-burger-closed.svg?react';
 import BurgerOpenedIcon from '../../images/icon-burger-opened.svg?react';
 
 import { TranslationContext } from '../../contexts/translationContext.js';
