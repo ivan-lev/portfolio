@@ -32,7 +32,8 @@ export const translations = {
     creditsTelegramLogo: 'Telegram icon from ',
     creditsVitePlugin: 'Convenient work with svg files is carried out using this package: ',
     creditsSunMoonIcons: 'Nice sun and moon icons were founded here: ',
-    creditsCssCustomProps: 'Great article about custom CSS properties: '
+    creditsCssCustomProps: 'Great article about custom CSS properties: ',
+    creditsBurgers: 'Burger icons were got from that collection: '
   },
   ru: {
     name: 'ru',
@@ -64,6 +65,7 @@ export const translations = {
     creditsVitePlugin: 'Удобная работа с svg файлами осуществлена посредством этого пакета: ',
     creditsSunMoonIcons:
       'Красивые иконки солнца и луны для темизации были взяты из этой коллекции: ',
-    creditsCssCustomProps: 'Отличная статья о кастомных CSS-свойствах: '
+    creditsCssCustomProps: 'Отличная статья о кастомных CSS-свойствах: ',
+    creditsBurgers: 'Иконки бургеров были взяты из этой коллекции: '
   }
 };
