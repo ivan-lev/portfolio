@@ -5,14 +5,7 @@ import { TranslationContext } from '../../contexts/translationContext.js';
 
 import filler from '../../images/filler.png';
 
-export default function ProjectCard({
-  preview,
-  title,
-  stack,
-  description,
-  previewLink,
-  githubLink
-}) {
+export default function ProjectCard({ preview, title, stack, description, link, ghLink }) {
   const translation = useContext(TranslationContext);
 
   return (
@@ -31,10 +24,10 @@ export default function ProjectCard({
         </p>
         <p className="project-card-tech-stack">{stack}</p>
         <p className="project-card-links">
-          <a href={previewLink} className="project-card-link-preview">
+          <a href={link} className="project-card-link-preview">
             {translation?.projectCardPreviewLinkText}
           </a>
-          <a href={githubLink} className="project-card-link-github">
+          <a href={ghLink} className="project-card-link-github">
             {translation?.projectCardGithubLinkText}
           </a>
         </p>
