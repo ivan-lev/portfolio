@@ -62,9 +62,8 @@ export const translations = {
     creditsSite: 'Сайт был создан на основе этого шаблона из ',
     creditsLogo: 'Логотип был взят здесь: ',
     creditsTelegramLogo: 'Иконка телеграма отсюда: ',
-    creditsVitePlugin: 'Удобная работа с svg файлами осуществлена посредством этого пакета: ',
-    creditsSunMoonIcons:
-      'Красивые иконки солнца и луны для темизации были взяты из этой коллекции: ',
+    creditsVitePlugin: 'Работа с svg файлами осуществлена посредством пакета ',
+    creditsSunMoonIcons: 'Иконки солнца и луны были взяты из коллекции ',
     creditsCssCustomProps: 'Отличная статья о кастомных CSS-свойствах: ',
     creditsBurgers: 'Иконки бургеров были взяты из этой коллекции: '
   }
