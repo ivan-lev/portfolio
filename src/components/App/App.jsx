@@ -47,12 +47,12 @@ function App() {
       <TranslationContext.Provider value={translations[lang]}>
         <Header />
         <Routes>
-          <Route path="/" element={<Navigate to="/portfolio" />} />
-          <Route path="/portfolio" element={<Main />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/credits" element={<Credits />} />
-          <Route path="*" element={<Navigate to="/portfolio" />} />
+          <Route path="/" element={<Navigate to="/portfolio/" />} />
+          <Route path="/portfolio/" element={<Main />} />
+          <Route path="/portfolio/about" element={<About />} />
+          <Route path="/portfolio/contact" element={<Contact />} />
+          <Route path="/portfolio/credits" element={<Credits />} />
+          <Route path="*" element={<Navigate to="/portfolio/" />} />
         </Routes>
         <Footer />
       </TranslationContext.Provider>

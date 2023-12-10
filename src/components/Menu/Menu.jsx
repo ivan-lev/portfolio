@@ -25,22 +25,22 @@ export default function Menu() {
       )}
       <ul className={`menu__elements ${menuOpened ? 'menu__elements_showed' : ''}`}>
         <li className="menu__element">
-          <Link className="menu__link" to="/portfolio">
+          <Link className="menu__link" to="/portfolio/">
             {translation?.menuHome}
           </Link>
         </li>
         <li className="menu__element">
-          <Link className="menu__link" to="/about">
+          <Link className="menu__link" to="/portfolio/about">
             {translation?.menuAbout}
           </Link>
         </li>
         <li className="menu__element">
-          <Link className="menu__link" to="/contact">
+          <Link className="menu__link" to="/portfolio/contact">
             {translation?.menuContact}
           </Link>
         </li>
         <li className="menu__element">
-          <Link className="menu__link" to="/credits">
+          <Link className="menu__link" to="/portfolio/credits">
             {translation?.menuCredits}
           </Link>
         </li>
