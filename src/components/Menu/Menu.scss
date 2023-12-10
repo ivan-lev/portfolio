@@ -5,6 +5,7 @@
     gap: 50px;
     list-style-type: none;
     grid-area: menu;
+    position: relative;
 
     @media screen and (max-width: 1440px) {
       gap: 30px;
@@ -28,7 +29,6 @@
     width: 30px;
     height: 30px;
     display: none;
-    position: relative;
 
     @media screen and (max-width: 800px) {
       display: unset;
@@ -60,7 +60,7 @@
 
     &_showed {
       position: absolute;
-      top: 100px;
+      top: 45px;
       right: 0;
       display: flex;
       flex-direction: column;
@@ -72,8 +72,8 @@
       }
 
       @media screen and (max-width: 500px) {
-        right: 50px;
-        top: 110px;
+        // right: 50px;
+        // top: 110px;
       }
     }
   }

@@ -34,7 +34,7 @@
   }
 
   @media screen and (max-width: 600px) {
-    padding: 100px;
+    max-width: 400px;
     gap: 70px;
   }
 
@@ -70,6 +70,7 @@
   }
 
   @media screen and (max-width: 900px) {
+    flex-direction: column;
     left: 25px;
   }
 
@@ -81,8 +82,11 @@
     left: 30px;
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     left: 15px;
-    flex-direction: column;
+  }
+
+  @media screen and (max-width: 500px) {
+    left: 30px;
   }
 }
