@@ -5,7 +5,7 @@ import { TranslationContext } from '../../contexts/translationContext.js';
 
 import avatar from '../../images/avatar.jpg';
 
-import ProjectCard from '../ProjectCard/ProjectCard.jsx';
+import ProjectElement from '../ProjectElement/ProjectElement.jsx';
 import { projects } from '../../variables/projects.js';
 
 import TechElement from '../TechElement/TechElement.jsx';
@@ -42,7 +42,7 @@ function Main() {
         <p className="main__subtitle">{translation?.projectsSubtitle}</p>
         <ul className="main__projects-list">
           {projects.map(({ id, preview, title, description, stack, link, ghLink }) => (
-            <ProjectCard
+            <ProjectElement
               key={id}
               preview={preview}
               title={title}

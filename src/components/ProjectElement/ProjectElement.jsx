@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
-import './ProjectCard.scss';
+import './ProjectElement.scss';
 
 import { TranslationContext } from '../../contexts/translationContext.js';
 
 import filler from '../../images/filler.png';
 
-export default function ProjectCard({ preview, title, stack, description, link, ghLink }) {
+export default function ProjectElement({ preview, title, stack, description, link, ghLink }) {
   const translation = useContext(TranslationContext);
 
   return (
