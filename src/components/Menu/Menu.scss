@@ -4,6 +4,7 @@
     align-items: center;
     gap: 50px;
     list-style-type: none;
+    grid-area: menu;
 
     @media screen and (max-width: 1440px) {
       gap: 30px;
@@ -13,12 +14,46 @@
       gap: 20px;
     }
 
-    @media screen and (max-width: 80px) {
+    @media screen and (max-width: 800px) {
       gap: 15px;
     }
 
     @media screen and (max-width: 600px) {
       gap: 12px;
+    }
+  }
+
+  &__burger {
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    display: none;
+    position: relative;
+
+    @media screen and (max-width: 800px) {
+      display: unset;
+    }
+
+    & > path {
+      stroke: var(--color-icon);
+      fill: var(--color-icon);
+    }
+  }
+
+  &__elements {
+    display: flex;
+
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+
+    &_showed {
+      position: absolute;
+      top: 90px;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      text-align: right;
     }
   }
 

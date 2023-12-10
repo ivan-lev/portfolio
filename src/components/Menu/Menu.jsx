@@ -1,34 +1,50 @@
-import React, { useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import './Menu.scss';
+
+import BurgerClosedIcon from '../../images/icon-burger.svg?react';
+import BurgerOpenedIcon from '../../images/icon-burger-opened.svg?react';
 
 import { TranslationContext } from '../../contexts/translationContext.js';
 
 export default function Menu() {
+  const [menuOpened, setMenuOpened] = useState(false);
+
+  function handleMenuOpen() {
+    setMenuOpened(!menuOpened);
+  }
+
   const translation = useContext(TranslationContext);
 
   return (
     <menu className="menu__content">
-      <li className="menu__element">
-        <Link className="menu__link" to="/portfolio">
-          {translation?.menuHome}
-        </Link>
-      </li>
-      <li className="menu__element">
-        <Link className="menu__link" to="/about">
-          {translation?.menuAbout}
-        </Link>
-      </li>
-      <li className="menu__element">
-        <Link className="menu__link" to="/contact">
-          {translation?.menuContact}
-        </Link>
-      </li>
-      <li className="menu__element">
-        <Link className="menu__link" to="/credits">
-          {translation?.menuCredits}
-        </Link>
-      </li>
+      {menuOpened ? (
+        <BurgerOpenedIcon className="menu__burger" onClick={handleMenuOpen} />
+      ) : (
+        <BurgerClosedIcon className="menu__burger" onClick={handleMenuOpen} />
+      )}
+      <ul className={`menu__elements ${menuOpened ? 'menu__elements_showed' : ''}`}>
+        <li className="menu__element">
+          <Link className="menu__link" to="/portfolio">
+            {translation?.menuHome}
+          </Link>
+        </li>
+        <li className="menu__element">
+          <Link className="menu__link" to="/about">
+            {translation?.menuAbout}
+          </Link>
+        </li>
+        <li className="menu__element">
+          <Link className="menu__link" to="/contact">
+            {translation?.menuContact}
+          </Link>
+        </li>
+        <li className="menu__element">
+          <Link className="menu__link" to="/credits">
+            {translation?.menuCredits}
+          </Link>
+        </li>
+      </ul>
     </menu>
   );
 }

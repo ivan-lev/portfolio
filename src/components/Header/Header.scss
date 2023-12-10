@@ -1,9 +1,14 @@
 .header {
-  display: flex;
+  display: grid;
+  grid-template-areas: 'logo menu social';
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 60px;
+
+  @media screen and (max-width: 800px) {
+    grid-template-areas: 'logo social menu';
+  }
 
   &__content {
     display: flex;

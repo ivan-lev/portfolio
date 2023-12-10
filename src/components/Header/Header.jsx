@@ -9,10 +9,10 @@ function Header() {
   return (
     <header className="header">
       <Logo />
-      <div className="header__content">
-        <Menu />
-        <SocialLinks />
-      </div>
+      <Menu />
+      <SocialLinks />
+      {/* <div className="header__content"> 
+      </div> */}
     </header>
   );
 }
