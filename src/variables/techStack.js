@@ -8,6 +8,8 @@ import nodejs from '../images/icon-tech-nodejs.svg';
 import react from '../images/icon-tech-react.svg';
 import redux from '../images/icon-tech-redux.svg';
 
+import postman from '../assets/icons/tech/postman.svg';
+
 export const techStack = [
   { logo: sass, alt: 'SASS' },
   { logo: css, alt: 'CSS' },
@@ -17,5 +19,6 @@ export const techStack = [
   { logo: js, alt: 'JavaScript' },
   { logo: nodejs, alt: 'NodeJS' },
   { logo: react, alt: 'React' },
-  { logo: redux, alt: 'Redux' }
+  { logo: redux, alt: 'Redux' },
+  { logo: postman, alt: 'Postman' }
 ];
