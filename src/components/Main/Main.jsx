@@ -3,7 +3,7 @@ import './Main.scss';
 
 import { TranslationContext } from '../../contexts/translationContext.js';
 
-import avatar from '../../images/avatar.jpg';
+import avatar from '../../assets/images/avatar.jpg';
 
 import ProjectElement from '../ProjectElement/ProjectElement.jsx';
 import { projects } from '../../variables/projects.js';

@@ -1,7 +1,7 @@
-import howToLearn from '../images/project-previews/how-to-learn.jpg';
-import russianTravel from '../images/project-previews/russian-travel.jpg';
-import mesto from '../images/project-previews/mesto.jpg';
-import portfolio from '../images/project-previews/portfolio.jpg';
+import howToLearn from '../assets/images/project-previews/how-to-learn.jpg';
+import russianTravel from '../assets/images/project-previews/russian-travel.jpg';
+import mesto from '../assets/images/project-previews/mesto.jpg';
+import portfolio from '../assets/images/project-previews/portfolio.jpg';
 
 export const projects = [
   {
