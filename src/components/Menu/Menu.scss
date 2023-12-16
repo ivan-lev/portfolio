@@ -70,8 +70,8 @@
       width: 100vw;
       height: 100vh;
 
-      @media screen and (max-width: 600px) {
-        gap: 20px;
+      @media screen and (max-width: 800px) {
+        gap: 10px;
       }
     }
   }
@@ -91,7 +91,7 @@
     font-family: var(--font-menu);
     font-size: 20px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     transition: all 0.5s;
 
     &:hover {
