@@ -44,6 +44,7 @@
   padding: 10px;
   background-color: var(--bg-color-card);
   border-radius: 10px;
+  z-index: 2;
 
   @media screen and (max-width: 800px) {
     flex-direction: column;
