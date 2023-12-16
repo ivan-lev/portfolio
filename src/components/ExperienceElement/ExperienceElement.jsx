@@ -1,18 +1,18 @@
 import React from 'react';
 import './ExperienceElement.scss';
 
-export default function ExperienceElement({ position, type, organization, place, period }) {
+export default function ExperienceElement({ position, type, organization, location, period }) {
   return (
-    <div className="experience__container">
+    <li className="experience__container">
       <p className="experience__row">
         <span className="experience__position">{position}</span>
-        <span className="experience__type">{type}</span>
+        {type ? <span className="experience__type">{type}</span> : ''}
       </p>
       <p className="experience__row">
         <span className="experience__organization">{organization}</span>
-        <span className="experience__location">{place}</span>
+        {location ? <span className="experience__location">{location}</span> : ''}
         <span className="experience__period">{period}</span>
       </p>
-    </div>
+    </li>
   );
 }
