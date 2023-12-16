@@ -3,6 +3,7 @@ import './About.scss';
 
 import { TranslationContext } from '../../contexts/translationContext.js';
 
+import { educations, jobs } from '../../variables/experience.js';
 import ExperienceElement from '../ExperienceElement/ExperienceElement.jsx';
 
 export default function About() {
@@ -16,30 +17,31 @@ export default function About() {
       </article>
       <article>
         <h2 className="main__title">{translation.workExperience}</h2>
-        <ExperienceElement
-          position="Junior Web Developer"
-          type="Full Time"
-          organization="Yandex Co."
-          place="Saint Petersburg"
-          period="Jan 2024 - Dec 2025"
-        />
-        <ExperienceElement
-          position="Junior Web Developer"
-          type="Internship"
-          organization="Mail.ru Co. Ltd"
-          place="Moscow"
-          period="Jan 2023 - Dec 2024"
-        />
+        <ul className="about__list">
+          {jobs.map(job => (
+            <ExperienceElement
+              key={job.id}
+              position={job.position}
+              type={job.type}
+              organization={job.organization}
+              location={job.location}
+              period={job.period}
+            />
+          ))}
+        </ul>
       </article>
       <article>
         <h2 className="main__title">{translation.education}</h2>
-        <ExperienceElement
-          position="Junior Web Developer"
-          type="Full Time"
-          organization="Yandex Co."
-          place="Saint Petersburg"
-          period="Jan 2024 - Dec 2025"
-        />
+        {educations.map(education => (
+          <ExperienceElement
+            key={education.id}
+            position={education.position}
+            type={education.type}
+            organization={education.organization}
+            place={education.place}
+            period={education.period}
+          />
+        ))}
       </article>
     </section>
   );
