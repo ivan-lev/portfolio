@@ -10,8 +10,14 @@ import { TranslationContext } from '../../contexts/translationContext.js';
 export default function Menu() {
   const [menuOpened, setMenuOpened] = useState(false);
 
-  function handleMenuOpen() {
-    setMenuOpened(!menuOpened);
+  function openMenu() {
+    setMenuOpened(true);
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMenu() {
+    setMenuOpened(false);
+    document.body.style.overflow = '';
   }
 
   const translation = useContext(TranslationContext);
@@ -19,28 +25,28 @@ export default function Menu() {
   return (
     <menu className="menu__content">
       {menuOpened ? (
-        <BurgerOpenedIcon className="menu__burger" onClick={handleMenuOpen} />
+        <BurgerOpenedIcon className="menu__burger" onClick={!menuOpened ? openMenu : closeMenu} />
       ) : (
-        <BurgerClosedIcon className="menu__burger" onClick={handleMenuOpen} />
+        <BurgerClosedIcon className="menu__burger" onClick={!menuOpened ? openMenu : closeMenu} />
       )}
       <ul className={`menu__elements ${menuOpened ? 'menu__elements_showed' : ''}`}>
         <li className="menu__element">
-          <Link className="menu__link" to="/portfolio/" onClick={handleMenuOpen}>
+          <Link className="menu__link" to="/portfolio/" onClick={closeMenu}>
             {translation?.menuHome}
           </Link>
         </li>
         <li className="menu__element">
-          <Link className="menu__link" to="/portfolio/about" onClick={handleMenuOpen}>
+          <Link className="menu__link" to="/portfolio/about" onClick={closeMenu}>
             {translation?.menuAbout}
           </Link>
         </li>
         <li className="menu__element">
-          <Link className="menu__link" to="/portfolio/contact" onClick={handleMenuOpen}>
+          <Link className="menu__link" to="/portfolio/contact" onClick={closeMenu}>
             {translation?.menuContact}
           </Link>
         </li>
         <li className="menu__element">
-          <Link className="menu__link" to="/portfolio/credits" onClick={handleMenuOpen}>
+          <Link className="menu__link" to="/portfolio/credits" onClick={closeMenu}>
             {translation?.menuCredits}
           </Link>
         </li>
