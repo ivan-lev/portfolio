@@ -31,22 +31,22 @@ export default function Menu() {
       )}
       <ul className={`menu__elements ${menuOpened ? 'menu__elements_showed' : ''}`}>
         <li className="menu__element">
-          <Link className="menu__link" to="/" onClick={closeMenu}>
+          <Link className="menu__link" to="/portfolio" onClick={closeMenu}>
             {translation?.menuHome}
           </Link>
         </li>
         <li className="menu__element">
-          <Link className="menu__link" to="/about" onClick={closeMenu}>
+          <Link className="menu__link" to="/portfolio/about" onClick={closeMenu}>
             {translation?.menuAbout}
           </Link>
         </li>
         <li className="menu__element">
-          <Link className="menu__link" to="/contact" onClick={closeMenu}>
+          <Link className="menu__link" to="/portfolio/contact" onClick={closeMenu}>
             {translation?.menuContact}
           </Link>
         </li>
         <li className="menu__element">
-          <Link className="menu__link" to="/credits" onClick={closeMenu}>
+          <Link className="menu__link" to="/portfolio/credits" onClick={closeMenu}>
             {translation?.menuCredits}
           </Link>
         </li>
