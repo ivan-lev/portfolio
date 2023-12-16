@@ -10,11 +10,11 @@
     transition: all 0.5s;
 
     &:hover {
-      transform: scale(1.2);
+      transform: translate(0, -2px);
     }
 
     &:active {
-      transform: scale(0);
+      transform: translate(0, 0);
     }
 
     & path {
