@@ -23,7 +23,7 @@ export const translations = {
     footerText: 'Designed and built by Ivan Lev with Love & Cup of Fine Chinese Tea',
     aboutmeTitle: 'About me',
     aboutmeInfo:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia iste blanditiis, explicabo sapiente molestias et sint facilis officiis aperiam nihil nesciunt aut similique. Illum, tempore facere. Adipisci nesciunt nostrum repudiandae?',
+      'Hello! My name is Ivan. I am a web developer who is passionate about my work. I am interested in new technologies and try to introduce them into my practice. My personal interests include Chinese tea, Japanese culture, and practicing meditation.',
     contactText: 'For any questions please mail me:',
     workExperience: 'Work experience',
     education: 'Education',
@@ -55,7 +55,7 @@ export const translations = {
     footerText: 'Разработано Иваном Львом с любовью и чашечкой китайского чая',
     aboutmeTitle: 'Обо мне',
     aboutmeInfo:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia iste blanditiis, explicabo sapiente molestias et sint facilis officiis aperiam nihil nesciunt aut similique. Illum, tempore facere. Adipisci nesciunt nostrum repudiandae?',
+      'Привет! Меня зовут Иван. Я веб-разработчик, увлечённый своим делом. Я интересуюсь свежими технологиями и стараюсь внедрить их в свою практику. Из личных интересов я увлекаюсь китайским чаем, японской культурой и практикую медитацию.',
     contactText: 'Если у вас есть вопросы, пишите на этот адрес: ',
     workExperience: 'Опыт работы',
     education: 'Образование',
