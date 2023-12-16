@@ -22,14 +22,14 @@ function App() {
   const [theme, setTheme] = useState(localStoredTheme);
 
   useEffect(() => {
-    if (!localStorage.getItem('lang')) {
-      localStorage.setItem('lang', 'en');
-      setLang('en');
-    }
-
     if (!localStorage.getItem('theme')) {
       localStorage.setItem('theme', 'dark');
       setTheme('dark');
+    }
+
+    if (!localStorage.getItem('lang')) {
+      localStorage.setItem('lang', 'en');
+      setLang('en');
     }
   }, []);
 
