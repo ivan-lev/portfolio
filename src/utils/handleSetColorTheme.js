@@ -1,8 +1,8 @@
 export default function handleSetColorTheme(theme) {
   const elem = document.documentElement;
 
-  elem.style.setProperty('--bg-color-primary', `var(--bg-${theme}-main)`);
-  elem.style.setProperty('--bg-color-secondary', `var(--bg-${theme}-card`);
+  elem.style.setProperty('--bg-color-main', `var(--bg-${theme}-main)`);
+  elem.style.setProperty('--bg-color-card', `var(--bg-${theme}-card`);
   elem.style.setProperty('--color-hero', `var(--color-${theme}-hero)`);
   elem.style.setProperty('--color-primary', `var(--color-${theme}-primary)`);
   elem.style.setProperty('--color-secondary', `var(--color-${theme}-secondary)`);
