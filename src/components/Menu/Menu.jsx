@@ -41,6 +41,11 @@ export default function Menu() {
           </Link>
         </li>
         <li className="menu__element">
+          <Link className="menu__link" to="/portfolio/uses" onClick={closeMenu}>
+            {translation?.menuUses}
+          </Link>
+        </li>
+        <li className="menu__element">
           <Link className="menu__link" to="/portfolio/contact" onClick={closeMenu}>
             {translation?.menuContact}
           </Link>
