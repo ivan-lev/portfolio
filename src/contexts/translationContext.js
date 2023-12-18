@@ -25,6 +25,9 @@ export const translations = {
     aboutmeTitle: 'About me',
     aboutmeInfo:
       'Hello! My name is Ivan. I am a web developer who is passionate about my work. I am interested in new technologies and try to introduce them into my practice. My personal interests include Chinese tea, Japanese culture, and practicing meditation.',
+    usesTitle: 'Software I use. Gadgets I love. Things I recommend.',
+    usesSubtitle:
+      "If you ask me about the things I use to create software and stay productive (or buy these things in the hopes that I'll be productive but actually just procrastinate), here's my extensive list.",
     contactText: 'For any questions please mail me:',
     workExperience: 'Work experience',
     education: 'Education',
@@ -58,6 +61,9 @@ export const translations = {
     aboutmeTitle: 'Обо мне',
     aboutmeInfo:
       'Привет! Меня зовут Иван. Я веб-разработчик, увлечённый своим делом. Я интересуюсь свежими технологиями и стараюсь внедрить их в свою практику. Из личных интересов я увлекаюсь китайским чаем, японской культурой и практикую медитацию.',
+    usesTitle: 'Софт, что я использую. Гаджеты, которые люблю. Вещи, которые рекомендую.',
+    usesSubtitle:
+      'Если вы спросите меня о том, что я использую для создания программ и поддержания продуктивности (или в надежде на то, что я буду продуктивным, но на самом деле просто прокрастинирую), то вот мой обширный список.',
     contactText: 'Если у вас есть вопросы, пишите на этот адрес: ',
     workExperience: 'Опыт работы',
     education: 'Образование',

@@ -1,18 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Uses.scss';
+
+import { TranslationContext } from '../../contexts/translationContext.js';
 
 import { techStackNew } from '../../variables/techStack.js';
 
-import airbuds from '../../assets/icons/misc/airbuds.svg';
-import laptop from '../../assets/icons/misc/laptop.svg';
-import meditation from '../../assets/icons/misc/meditation.svg';
+import Airbuds from '../../assets/icons/misc/airbuds.svg?react';
+import Laptop from '../../assets/icons/misc/laptop.svg?react';
+import Meditation from '../../assets/icons/misc/meditation.svg?react';
 
 export default function Uses() {
+  const translation = useContext(TranslationContext);
+
   function createListElement(logo, title, text) {
     return (
       <li className="uses__list-element">
         <div className="uses__header">
-          {logo ? <img className="uses__logo" src={logo}></img> : null}
+          {typeof logo === 'string' ? <img className="uses__logo" src={logo}></img> : logo}
           <h3 className="uses__title">{title}</h3>
         </div>
 
@@ -23,6 +27,8 @@ export default function Uses() {
 
   return (
     <article className="uses__article">
+      <h1 className="main__title">{translation.usesTitle}</h1>
+      <div className="main__subtitle">{translation.usesSubtitle}</div>
       <section className="uses__section">
         <h2 className="uses__title uses__section-title">Дизайн</h2>
         <ul className="uses__list">
@@ -75,12 +81,12 @@ export default function Uses() {
         <h2 className="uses__title uses__section-title">Оборудование</h2>
         <ul className="uses__list">
           {createListElement(
-            laptop,
+            <Laptop fill="gray" width="20" height="20" />,
             'MacBook Air 13"',
             'Обычно здесь пишут о своей крутой технике, но я перешёл с нового 15-дюймового Lenovo на 13-дюймовый MacBook Air 2013 года. Он оказался очень проворным, и спокойно выдерживает нагрузки.'
           )}
           {createListElement(
-            airbuds,
+            <Airbuds fill="gray" height="20" width="20" />,
             'Jabra Elite Active 65t',
             'Для фиксации внимания на рабочем процессе в новых или шумных местах - это отличный гаджет с пассивным шумоподавлением. А при необходимости, можно подавить шум и активно, включив музыку :)'
           )}
@@ -91,9 +97,9 @@ export default function Uses() {
         <h2 className="uses__title uses__section-title">Здоровье и продуктивность</h2>
         <ul className="uses__list">
           {createListElement(
-            meditation,
+            <Meditation fill="gray" width="20" height="20" />,
             'Insight Timer',
-            'Я пользуюсь этой программой для медитации и практик. Она ежедневно напоминает мне о том, что нужно оценить своё состояние и уделить время для практики. Поддерживать баланс - это залог продуктивности.'
+            'Я пользуюсь этой программой для медитации и практик. Она ежедневно напоминает мне о том, что нужно оценить своё состояние и уделить время для практикe. Поддерживать баланс - это залог продуктивности.'
           )}
         </ul>
       </section>
