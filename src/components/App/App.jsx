@@ -12,6 +12,7 @@ import Header from '../Header/Header.jsx';
 import Main from '../Main/Main.jsx';
 import Footer from '../Footer/Footer.jsx';
 import About from '../About/About.jsx';
+import Uses from '../Uses/Uses.jsx';
 import Contact from '../Contact/Contact.jsx';
 import Credits from '../Credits/Credits.jsx';
 
@@ -50,6 +51,7 @@ function App() {
           <Route path="/" element={<Navigate to="/portfolio/" />} />
           <Route path="/portfolio/" element={<Main />} />
           <Route path="/portfolio/about" element={<About />} />
+          <Route path="/portfolio/uses" element={<Uses />} />
           <Route path="/portfolio/contact" element={<Contact />} />
           <Route path="/portfolio/credits" element={<Credits />} />
           <Route path="*" element={<Navigate to="/" />} />
