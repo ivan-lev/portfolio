@@ -10,9 +10,6 @@ function Header() {
     <header className="header">
       <Logo />
       <Menu />
-      <SocialLinks />
-      {/* <div className="header__content"> 
-      </div> */}
     </header>
   );
 }
