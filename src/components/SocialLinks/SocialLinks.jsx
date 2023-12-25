@@ -1,12 +1,11 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './SocialLinks.scss';
 
-// import githubIcon from '../../images/icon-social-github.svg?react';
 import GithubIcon from '../../images/icon-social-github.svg?react';
 import LinkedInIcon from '../../images/icon-social-linkedin.svg?react';
 import TelegramIcon from '../../images/icon-social-telegram.svg?react';
+import InstagramIcon from '../../assets/icons/instagram.svg?react'
 
 export default function SocialLinks() {
   return (
@@ -19,6 +18,9 @@ export default function SocialLinks() {
       </Link>
       <Link className="social-icon" to="https://t.me/ivanlev">
         <TelegramIcon />
+      </Link>
+      <Link className="social-icon" to="https://instagram.com/tea_lion">
+        <InstagramIcon />
       </Link>
     </div>
   );
