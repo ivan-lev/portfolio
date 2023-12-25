@@ -1,7 +1,7 @@
 :root {
   // dark theme
-  --bg-dark-main: #111111;
-  --bg-dark-card: #222222;
+  --bg-dark-primary: #111111;
+  --bg-dark-secondary: #222222;
 
   --color-dark-hero: #d9d9d9;
   --color-dark-primary: #cccccc;
@@ -11,12 +11,17 @@
 
   --color-green: #018c0f;
   --color-dark-green: #d7ffe0;
+
+  // text gradients
   --color-gradient: linear-gradient(90deg, #13b0f5 0%, #e70faa 100%);
   --color-gradient-vertical: linear-gradient(0deg, #13b0f5 -2%, #e70faa 100%);
+  --orange-gradient: linear-gradient(180deg, #FF8660 0%, #D5491D 100%);
+  --blue-gradient: linear-gradient(180deg, #5BADFF 0%, #1373D1 100%);
+  --gray-gradient: linear-gradient(180deg, var(--color-dark-secondary) 0%, var(--color-dark-primary) 100%);
 
   // beige theme
-  --bg-beige-main: #f3e9dd;
-  --bg-beige-card: #fdf6ec;
+  --bg-beige-primary: #f3e9dd;
+  --bg-beige-secondary: #fdf6ec;
 
   --color-beige-hero: #191919;
   --color-beige-primary: #363636;

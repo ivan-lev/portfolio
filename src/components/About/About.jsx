@@ -1,4 +1,5 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
+import {Link} from "react-router-dom";
 import './About.scss';
 
 import { TranslationContext } from '../../contexts/translationContext.js';
@@ -11,12 +12,29 @@ export default function About() {
 
   return (
     <section className="about">
+      {/* Work
+      I'm self-taught programmer from Russia.
+      One day I decided to switch career from being bartender.
+      What I didnt know back then is that in the process of learning to code I would soon discover a true passion.
+      I have a one years of experience developing web applications, building websites and contributing to Open Source projects.
+      React - thats the technology I know best and work daily with.
+
+      Bio
+      1995Born in Balakovo, Russia.
+      2012Graduated from the Physics and Mathematics Lyceum in Semenov
+      2013Started working as a bartender
+      2022 to presentWorks as a Frontend developer
+
+      My interests
+      Чай, фотография */}
+
       <article>
-        <h2 className="main__title">{translation.aboutmeTitle}</h2>
-        <p className="main__text">{translation.aboutmeInfo}</p>
+        <h2 className="title-gray">{translation.aboutmeTitle}</h2>
+        <p className="text">{translation.aboutmeInfo}</p>
+        <Link className="about__download-cv-button" to="#">Download CV</Link>
       </article>
       <article>
-        <h2 className="main__title">{translation.workExperience}</h2>
+        <h2 className="title-gray">{translation.workExperience}</h2>
         <ul className="about__list">
           {jobs.map(job => (
             <ExperienceElement
@@ -31,7 +49,7 @@ export default function About() {
         </ul>
       </article>
       <article>
-        <h2 className="main__title">{translation.education}</h2>
+        <h2 className="title-gray">{translation.education}</h2>
         {educations.map(education => (
           <ExperienceElement
             key={education.id}

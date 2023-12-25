@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import './Uses.scss';
 
 import { TranslationContext } from '../../contexts/translationContext.js';
@@ -20,15 +20,15 @@ export default function Uses() {
           <h3 className="uses__title">{title}</h3>
         </div>
 
-        <p className="main__text uses__text">{text}</p>
+        <p className="text uses__text">{text}</p>
       </li>
     );
   }
 
   return (
     <article className="uses__article">
-      <h1 className="main__title">{translation.usesTitle}</h1>
-      <div className="main__subtitle">{translation.usesSubtitle}</div>
+      <h1 className="title-gray">{translation.usesTitle}</h1>
+      <div className="subtitle">{translation.usesSubtitle}</div>
       <section className="uses__section">
         <h2 className="uses__title uses__section-title">Дизайн</h2>
         <ul className="uses__list">

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import './Main.scss';
 
 import { TranslationContext } from '../../contexts/translationContext.js';
@@ -29,8 +29,8 @@ function Main() {
         <img className="main__avatar" src={avatar} alt={translation?.avatarAlt}></img>
       </section>
       <section className="main__stack">
-        <h2 className="main__title">{translation?.techStack}</h2>
-        <p className="main__subtitle">{translation?.technologies}</p>
+        <h2 className="title-orange">{translation?.techStack}</h2>
+        <p className="subtitle">{translation?.technologies}</p>
         <ul className="main__stack-list">
           {techStack.map(({ logo, alt }) => (
             <TechElement key={alt} logo={logo} alt={alt} />
@@ -38,8 +38,8 @@ function Main() {
         </ul>
       </section>
       <section className="projects">
-        <h2 className="main__title">{translation?.projectsTitle}</h2>
-        <p className="main__subtitle">{translation?.projectsSubtitle}</p>
+        <h2 className="title-blue">{translation?.projectsTitle}</h2>
+        <p className="subtitle">{translation?.projectsSubtitle}</p>
         <ul className="main__projects-list">
           {projects.map(({ id, preview, title, description, stack, link, ghLink }) => (
             <ProjectElement

@@ -1,7 +1,7 @@
 .project-card {
   max-width: 400px;
   box-sizing: border-box;
-  background-color: var(--bg-color-card);
+  background-color: var(--bg-color-secondary);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -116,14 +116,15 @@
     justify-content: space-around;
 
     & > a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
       text-decoration-line: underline;
       color: var(--color-additional);
       cursor: pointer;
-      display: flex;
-      gap: 10px;
       transition: all 0.5s;
 
       @media screen and (max-width: 1440px) {
@@ -137,15 +138,17 @@
 
       &::before {
         background-size: 20px 20px;
+        background-position: center;
+        background-repeat: no-repeat;
         display: inline-block;
         width: 20px;
         height: 20px;
         content: '';
 
         @media screen and (max-width: 1440px) {
-          background-size: 15px 15px;
-          width: 15px;
-          height: 15px;
+          background-size: 12px 12px;
+          width: 12px;
+          height: 12px;
         }
       }
     }
