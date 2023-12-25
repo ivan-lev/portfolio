@@ -14,19 +14,19 @@ import postman from '../assets/icons/tech/postman.svg';
 import vscode from '../assets/icons/tech/vscode.svg';
 
 export const techStack = [
-  { logo: sass, alt: 'SASS' },
+  { logo: html, alt: 'HTML' },
   { logo: css, alt: 'CSS' },
+  { logo: js, alt: 'JavaScript' },
+  { logo: figma, alt: 'Figma`' },
   { logo: git, alt: 'Git' },
   { logo: github, alt: 'Github' },
-  { logo: html, alt: 'HTML' },
-  { logo: js, alt: 'JavaScript' },
-  { logo: nodejs, alt: 'NodeJS' },
+  { logo: vscode, alt: 'VSCode`' },
+  { logo: sass, alt: 'SASS' },
   { logo: react, alt: 'React' },
   { logo: redux, alt: 'Redux' },
-  { logo: postman, alt: 'Postman' },
+  { logo: nodejs, alt: 'NodeJS' },
   { logo: mongo, alt: 'MongoDB`' },
-  { logo: figma, alt: 'Figma`' },
-  { logo: vscode, alt: 'VSCode`' }
+  { logo: postman, alt: 'Postman' }
 ];
 
 export const techStackNew = {
