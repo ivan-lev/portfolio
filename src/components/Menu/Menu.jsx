@@ -31,7 +31,7 @@ export default function Menu() {
       )}
       <ul className={`menu__elements ${menuOpened ? 'menu__elements_showed' : ''}`}>
         <li className="menu__element">
-          <Link className="menu__link" to="/portfolio" onClick={closeMenu}>
+          <Link className="menu__link" to="/portfolio/" onClick={closeMenu}>
             {translation?.menuHome}
           </Link>
         </li>
