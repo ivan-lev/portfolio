@@ -26,12 +26,12 @@ export default function Credits() {
           Flaticon.com
         </Link>
 
-        <span className="text credits__text">{translation.creditsIcons}</span>
+        <span className="credits__text">{translation.creditsIcons}</span>
         <Link className="credits__link" to="https://www.svgrepo.com/">
           Svgrepo.com
         </Link>
 
-        <span className="text credits__text">{translation.creditsSunMoonIcons}</span>
+        <span className="credits__text">{translation.creditsSunMoonIcons}</span>
         <Link
           className="credits__link"
           to="https://www.svgrepo.com/collection/solar-outline-icons/"
@@ -40,12 +40,12 @@ export default function Credits() {
         </Link>
       </p>
       <p className="text">
-        <span className="text credits__text">{translation.creditsVitePlugin}</span>
+        <span className="credits__text">{translation.creditsVitePlugin}</span>
         <Link className="credits__link" to="https://www.npmjs.com/package/vite-plugin-svgr">
           vite-plugin-svgr
         </Link>
 
-        <span className="text credits__text">{translation.creditsCssCustomProps}</span>
+        <span className="credits__text">{translation.creditsCssCustomProps}</span>
         <Link
           className="credits__link"
           to="https://tproger.ru/articles/custom-properties-in-css-part-1"
