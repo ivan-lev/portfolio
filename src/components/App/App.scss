@@ -117,13 +117,14 @@
   transition: inherit;
   text-align: justify;
   text-align-last: left;
+  text-wrap: wrap;
   margin-bottom: 20px;
 }
 
- .title-orange {
+.title-orange {
   background: var(--orange-gradient);
   @include title;
- }
+}
 
 .title-blue {
   background: var(--blue-gradient);
