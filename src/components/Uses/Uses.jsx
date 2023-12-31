@@ -3,7 +3,7 @@ import './Uses.scss';
 
 import { TranslationContext } from '../../contexts/translationContext.js';
 
-import { techStackNew } from '../../variables/techStack.js';
+import { techStack } from '../../variables/techStack.js';
 
 import Airbuds from '../../assets/icons/misc/airbuds.svg?react';
 import Laptop from '../../assets/icons/misc/laptop.svg?react';
@@ -33,7 +33,7 @@ export default function Uses() {
         <h2 className="uses__title uses__section-title">Дизайн</h2>
         <ul className="uses__list">
           {createListElement(
-            techStackNew.figma.logo,
+            techStack.figma.logo,
             'Figma',
             'Для вёрстки я использую Figma, так как это лучшее приложение в своей сфере. У меня есть минимальный опыт работы с макетами, созданными в Photoshop, но Figma де-факто стала стандартом в отрасли.'
           )}
@@ -44,12 +44,12 @@ export default function Uses() {
         <h2 className="uses__title uses__section-title">Фронтенд</h2>
         <ul className="uses__list">
           {createListElement(
-            techStackNew.vscode.logo,
+            techStack.vscode.logo,
             'Visual Studio Code',
             'Изначально я писал код в Sublime Text, потом перешёл на Atom. Сейчас я остановился на VSCode. Хотя есть и другие, более продвинутые инструменты разработки, мне нравится его скорость и доступность. Можно создавать проекты на МакБуке 10-летней давности и VSCode не будет тормозить. Он очень хорош.'
           )}
           {createListElement(
-            techStackNew.react.logo,
+            techStack.react.logo,
             'React',
             'Согласно опросу разработчиков на Stack Overflow, по состоянию на 2023 год, библиотека React лидирует по популярности, пользуясь спросом у 40% респондентов. Я пишу веб-приложения, используя React, так как это удобный инструмент с богатой экосистемой. Этот сайт создан также на React.'
           )}
@@ -60,17 +60,17 @@ export default function Uses() {
         <h2 className="uses__title uses__section-title">Бэкенд</h2>
         <ul className="uses__list">
           {createListElement(
-            techStackNew.nodejs.logo,
+            techStack.nodejs.logo,
             'NodeJS',
             'У меня есть базовые знания по созданию сервера на NodeJS с использованием библиотеки Express.js. Сервер на NodeJS позволяет работать как с файловой системой, так и с базами данных посредством встроенных инструментов и библиотек, расширяющих его функционал.'
           )}
           {createListElement(
-            techStackNew.mongo.logo,
+            techStack.mongo.logo,
             'MongoDB',
             'Одна из популярнейших NoSQL баз данных, и самая распространённая среди используемых с Node.js. Данные хранятся в структурах, близких JSON и их просто обрабатывать из JavaScript, что очень удобно.'
           )}
           {createListElement(
-            techStackNew.postman.logo,
+            techStack.postman.logo,
             'Postman',
             'Postman - удобная программа, которая позволяет отправлять на сервер запросы и проверять, как на них реагирует сервер. Это гибкий инструмент, с помощью которого можно быстро протестировать работу api.'
           )}
