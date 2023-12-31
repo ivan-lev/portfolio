@@ -32,13 +32,16 @@ function Main() {
         <h2 className="title-orange">{translation?.techStack}</h2>
         <p className="subtitle">{translation?.technologies}</p>
         <ul className="main__stack-list">
-          {Object.keys(techStack).map(element => (
-            <TechElement
-              key={techStack[element].title}
-              logo={techStack[element].logo}
-              alt={techStack[element].title}
-            />
-          ))}
+          {Object.keys(techStack).map(
+            element =>
+              techStack[element].showOnMain && (
+                <TechElement
+                  key={techStack[element].title}
+                  logo={techStack[element].logo}
+                  alt={techStack[element].title}
+                />
+              )
+          )}
         </ul>
       </section>
 
