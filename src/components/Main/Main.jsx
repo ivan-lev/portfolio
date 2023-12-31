@@ -32,11 +32,16 @@ function Main() {
         <h2 className="title-orange">{translation?.techStack}</h2>
         <p className="subtitle">{translation?.technologies}</p>
         <ul className="main__stack-list">
-          {techStack.map(({ logo, alt }) => (
-            <TechElement key={alt} logo={logo} alt={alt} />
+          {Object.keys(techStack).map(element => (
+            <TechElement
+              key={techStack[element].title}
+              logo={techStack[element].logo}
+              alt={techStack[element].title}
+            />
           ))}
         </ul>
       </section>
+
       <section className="projects">
         <h2 className="title-blue">{translation?.projectsTitle}</h2>
         <p className="subtitle">{translation?.projectsSubtitle}</p>
