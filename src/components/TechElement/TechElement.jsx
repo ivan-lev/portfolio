@@ -1,4 +1,3 @@
-import React from 'react';
 import './TechElement.scss';
 
 export default function TechElement({ logo, alt }) {
