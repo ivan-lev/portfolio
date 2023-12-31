@@ -31,13 +31,17 @@ export const translations = {
     contactText: 'For any questions please mail me:',
     workExperience: 'Work experience',
     education: 'Education',
-    creditsSite: 'This site was created using free template from ',
-    creditsLogo: 'Logo was founded on ',
-    creditsTelegramLogo: 'Telegram icon from ',
+    creditsTitle: 'Credits',
+    creditsSubtitle:
+      'On this page I want to mention all the resources that in one way or another helped me create my website',
+    creditsSite:
+      'The site was created based on a free template. It was heavily redesigned, responsiveness was added, unnecessary elements were removed, but the core was taken from here: ',
+    creditsLogo: 'I found a good logo on ',
+    creditsIcons: 'I took all the icons in svg format from ',
     creditsVitePlugin: 'Convenient work with svg files is carried out using this package: ',
     creditsSunMoonIcons: 'Nice sun and moon icons were founded here: ',
-    creditsCssCustomProps: 'Great article about custom CSS properties: ',
-    creditsBurgers: 'Burger icons were got from that collection: '
+    creditsCssCustomProps:
+      'An excellent article about custom CSS properties that will help you conveniently change themes on your site: '
   },
   ru: {
     name: 'ru',
@@ -67,12 +71,16 @@ export const translations = {
     contactText: 'Если у вас есть вопросы, пишите на этот адрес: ',
     workExperience: 'Опыт работы',
     education: 'Образование',
-    creditsSite: 'Сайт был создан на основе этого шаблона из ',
-    creditsLogo: 'Логотип был взят здесь: ',
-    creditsTelegramLogo: 'Иконка телеграма отсюда: ',
+    creditsTitle: 'Благодарности',
+    creditsSubtitle:
+      'На этой странице я хочу упомянуть все ресурсы, которые так или иначе помогли мне создать мой сайт',
+    creditsSite:
+      'Сайт был создан на основе бесплатного шаблона. Он был значительно переработан, добавлена отзывчивость, убраны лишние элементы, но костяк был взят отсюда: ',
+    creditsLogo: 'Неплохой логотип был найден мною здесь: ',
+    creditsTelegramLogo: 'Все иконки в формате svg я взял с сайта ',
     creditsVitePlugin: 'Работа с svg файлами осуществлена посредством пакета ',
     creditsSunMoonIcons: 'Иконки солнца и луны были взяты из коллекции ',
-    creditsCssCustomProps: 'Отличная статья о кастомных CSS-свойствах: ',
-    creditsBurgers: 'Иконки бургеров были взяты из этой коллекции: '
+    creditsCssCustomProps:
+      'Отличная статья о кастомных CSS-свойствах, которая поможет вам удобно менять темы на сайте: '
   }
 };
