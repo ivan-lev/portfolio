@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import './Footer.scss';
 
 import { TranslationContext } from '../../contexts/translationContext.js';
@@ -15,7 +15,7 @@ function Footer() {
       <SocialLinks />
       <div className="footer__info">
         <a href="tel:+79030909030">+7-903-090-90-30</a>
-        <a href="mailto:fanatos@mail.ru">fanatos@mail.ru</a>
+        <a href="mailto:ivanlev@mail.com">ivanlev@mail.com</a>
       </div>
     </footer>
   );
