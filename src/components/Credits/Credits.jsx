@@ -8,7 +8,7 @@ export default function Credits() {
   const translation = useContext(TranslationContext);
 
   return (
-    <section className="credits">
+    <article className="credits">
       <h2 className="title-gray">{translation.creditsTitle}</h2>
       <p className="subtitle">{translation.creditsSubtitle}</p>
 
@@ -53,6 +53,6 @@ export default function Credits() {
           Tproger
         </Link>
       </p>
-    </section>
+    </article>
   );
 }
