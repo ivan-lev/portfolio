@@ -12,7 +12,7 @@ export default function Credits() {
       <h2 className="title-gray">{translation.creditsTitle}</h2>
       <p className="subtitle">{translation.creditsSubtitle}</p>
 
-      <p className="text">
+      <div className="text">
         <span className="credits__text">{translation.creditsSite}</span>
         <Link
           className="credits__link"
@@ -38,8 +38,9 @@ export default function Credits() {
         >
           Solar Outline Icons
         </Link>
-      </p>
-      <p className="text">
+      </div>
+
+      <div className="text">
         <span className="credits__text">{translation.creditsVitePlugin}</span>
         <Link className="credits__link" to="https://www.npmjs.com/package/vite-plugin-svgr">
           vite-plugin-svgr
@@ -52,7 +53,7 @@ export default function Credits() {
         >
           Tproger
         </Link>
-      </p>
+      </div>
     </article>
   );
 }
