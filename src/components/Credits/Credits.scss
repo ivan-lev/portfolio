@@ -16,8 +16,8 @@
   }
 
   &__text {
-    white-space: pre-line;
-    text-wrap: wrap;
+    //white-space: pre-line;
+    //text-wrap: wrap;
     margin-bottom: 0;
 
     &:nth-of-type(n + 2)::before {
