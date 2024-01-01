@@ -67,11 +67,6 @@
     margin-bottom: 15px;
     letter-spacing: 4px;
   }
-
-  @media screen and (max-width: 600px) {
-    font-size: 24px;
-    margin-bottom: 24px;
-  }
 }
 
 .subtitle {
@@ -101,11 +96,6 @@
     font-size: 18px;
     margin-bottom: 60px;
   }
-
-  @media screen and (max-width: 600px) {
-    font-size: 16px;
-    margin-bottom: 40px;
-  }
 }
 
 .text {
@@ -117,7 +107,6 @@
   transition: inherit;
   text-align: justify;
   text-align-last: left;
-  text-wrap: wrap;
   margin-bottom: 20px;
   max-width: 100%;
 }
