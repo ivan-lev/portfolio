@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom';
 
 import './SocialLinks.scss';
 
-import GithubIcon from '../../images/icon-social-github.svg?react';
-import LinkedInIcon from '../../images/icon-social-linkedin.svg?react';
-import TelegramIcon from '../../images/icon-social-telegram.svg?react';
-import InstagramIcon from '../../assets/icons/instagram.svg?react'
+import GithubIcon from '../../assets/icons/icon-github.svg?react';
+import LinkedInIcon from '../../assets/icons/icon-linkedin.svg?react';
+import TelegramIcon from '../../assets/icons/icon-telegram.svg?react';
+import InstagramIcon from '../../assets/icons/icon-instagram.svg?react';
 
 export default function SocialLinks() {
   return (
