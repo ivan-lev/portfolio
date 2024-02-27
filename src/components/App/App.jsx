@@ -2,12 +2,15 @@ import { useState, useEffect } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import './App.scss';
 
-import { TranslationContext, translations } from '../../contexts/translationContext.js';
+import { TranslationContext, TRANSLATION } from '../../contexts/translationContext.js';
+import { LanguageContext } from '../../contexts/languageContext.js';
 
 import ToggleLanguageButton from '../ToggleLanguageButton/ToggleLanguageButton.jsx';
 import ToggleThemeButton from '../ToggleThemeButton/ToggleThemeButton.jsx';
 import handleSetColorTheme from '../../utils/handleSetColorTheme.js';
 
+import Logo from '../Logo/Logo.jsx';
+import Menu from '../Menu/Menu.jsx';
 import Header from '../Header/Header.jsx';
 import Main from '../Main/Main.jsx';
 import Footer from '../Footer/Footer.jsx';
@@ -45,19 +48,24 @@ function App() {
         <ToggleThemeButton theme={theme} setTheme={setTheme} />
       </div>
 
-      <TranslationContext.Provider value={translations[lang]}>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Navigate to="/portfolio/" />} />
-          <Route path="/portfolio/" element={<Main />} />
-          <Route path="/portfolio/about" element={<About />} />
-          <Route path="/portfolio/uses" element={<Uses />} />
-          <Route path="/portfolio/contact" element={<Contact />} />
-          <Route path="/portfolio/credits" element={<Credits />} />
-          <Route path="*" element={<Navigate to="/" />} />
-        </Routes>
-        <Footer />
-      </TranslationContext.Provider>
+      <LanguageContext.Provider value={lang}>
+        <TranslationContext.Provider value={TRANSLATION}>
+          <Header>
+            <Logo />
+            <Menu />
+          </Header>
+          <Routes>
+            <Route path="/" element={<Navigate to="/portfolio/" />} />
+            <Route path="/portfolio/" element={<Main />} />
+            <Route path="/portfolio/about" element={<About />} />
+            <Route path="/portfolio/uses" element={<Uses />} />
+            <Route path="/portfolio/contact" element={<Contact />} />
+            <Route path="/portfolio/credits" element={<Credits />} />
+            <Route path="*" element={<Navigate to="/" />} />
+          </Routes>
+          <Footer />
+        </TranslationContext.Provider>
+      </LanguageContext.Provider>
     </div>
   );
 }

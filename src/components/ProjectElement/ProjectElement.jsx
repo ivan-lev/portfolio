@@ -1,12 +1,14 @@
 import React, { useContext } from 'react';
 import './ProjectElement.scss';
 
+import { LanguageContext } from '../../contexts/languageContext.js';
 import { TranslationContext } from '../../contexts/translationContext.js';
 
 import filler from '../../assets/images/project-previews/filler.png';
 
 export default function ProjectElement({ preview, title, stack, description, link, ghLink }) {
-  const translation = useContext(TranslationContext);
+  const LANG = useContext(LanguageContext);
+  const TRANSLATION = useContext(TranslationContext);
 
   return (
     <li className="project-card">
@@ -25,10 +27,10 @@ export default function ProjectElement({ preview, title, stack, description, lin
         <p className="project-card-tech-stack">{stack}</p>
         <p className="project-card-links">
           <a href={link} className="project-card-link-preview">
-            {translation?.projectCardPreviewLinkText}
+            {TRANSLATION?.PROJECT_CARD.LINK[LANG]}
           </a>
           <a href={ghLink} className="project-card-link-github">
-            {translation?.projectCardGithubLinkText}
+            {TRANSLATION?.PROJECT_CARD.GITHUB[LANG]}
           </a>
         </p>
       </div>

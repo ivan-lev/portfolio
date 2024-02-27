@@ -1,14 +1,20 @@
-import { useContext } from 'react';
-import {Link} from "react-router-dom";
 import './About.scss';
 
-import { TranslationContext } from '../../contexts/translationContext.js';
+//hooks
+import { useContext } from 'react';
+import { Link } from 'react-router-dom';
 
-import { educations, jobs } from '../../variables/experience.js';
+//components
 import ExperienceElement from '../ExperienceElement/ExperienceElement.jsx';
 
+//variables and contexts
+import { LanguageContext } from '../../contexts/languageContext.js';
+import { TranslationContext } from '../../contexts/translationContext.js';
+import { educations, jobs } from '../../variables/experience.js';
+
 export default function About() {
-  const translation = useContext(TranslationContext);
+  const LANG = useContext(LanguageContext);
+  const TRANSLATION = useContext(TranslationContext);
 
   return (
     <section className="about">
@@ -20,20 +26,22 @@ export default function About() {
       React - thats the technology I know best and work daily with.
 
       Bio
-      1995Born in Balakovo, Russia.
-      2012Graduated from the Physics and Mathematics Lyceum in Semenov
-      2013Started working as a bartender
-      2022 to presentWorks as a Frontend developer
+      1987 Born in Magnitogorsk, Russia.
+      2009 Graduated from Magnitogorsk State University
+      2015 Started e-commerce project with vintage Japanese ceramics
+      2023 to present Works as a Frontend developer
 
       My interests
       Чай, фотография */}
 
       <article>
-        <h2 className="title-gray">{translation.aboutmeTitle}</h2>
-        <p className="text">{translation.aboutmeInfo}</p>
-        <Link className="about__download-cv-button" to="#">Download CV</Link>
+        <h2 className="title-gray">{TRANSLATION.ABOUT_ME.TITLE[LANG]}</h2>
+        <p className="text">{TRANSLATION.ABOUT_ME.INFO[LANG]}</p>
+        {/* <Link className="about__download-cv-button" to="#">
+          Download CV
+        </Link> */}
       </article>
-      <article>
+      {/* <article>
         <h2 className="title-gray">{translation.workExperience}</h2>
         <ul className="about__list">
           {jobs.map(job => (
@@ -47,19 +55,21 @@ export default function About() {
             />
           ))}
         </ul>
-      </article>
+      </article> */}
       <article>
-        <h2 className="title-gray">{translation.education}</h2>
-        {educations.map(education => (
-          <ExperienceElement
-            key={education.id}
-            position={education.position}
-            type={education.type}
-            organization={education.organization}
-            place={education.place}
-            period={education.period}
-          />
-        ))}
+        <h2 className="title-gray">{TRANSLATION.ABOUT_ME.EDUCATION[LANG]}</h2>
+        <ul className="about__list">
+          {educations.map(education => (
+            <ExperienceElement
+              key={education.id}
+              position={education.position}
+              type={education.type}
+              organization={education.organization}
+              place={education.place}
+              period={education.period}
+            />
+          ))}
+        </ul>
       </article>
     </section>
   );

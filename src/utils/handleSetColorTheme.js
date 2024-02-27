@@ -9,4 +9,5 @@ export default function handleSetColorTheme(theme) {
   elem.style.setProperty('--color-additional', `var(--color-${theme}-additional)`);
   elem.style.setProperty('--color-icon', `var(--color-${theme}-icon)`);
   elem.style.setProperty('--color-icon-hover', `var(--color-${theme}-additional)`);
+  elem.style.setProperty('--logo-color', `var(--color-${theme}-additional)`);
 }

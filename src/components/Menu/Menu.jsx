@@ -5,9 +5,12 @@ import './Menu.scss';
 import BurgerClosedIcon from '../../images/icon-burger-closed.svg?react';
 import BurgerOpenedIcon from '../../images/icon-burger-opened.svg?react';
 
+import { LanguageContext } from '../../contexts/languageContext.js';
 import { TranslationContext } from '../../contexts/translationContext.js';
 
 export default function Menu() {
+  const LANG = useContext(LanguageContext);
+  const TRANSLATION = useContext(TranslationContext);
   const [menuOpened, setMenuOpened] = useState(false);
 
   function openMenu() {
@@ -20,8 +23,6 @@ export default function Menu() {
     document.body.style.overflow = '';
   }
 
-  const translation = useContext(TranslationContext);
-
   return (
     <menu className="menu__content">
       {menuOpened ? (
@@ -32,27 +33,27 @@ export default function Menu() {
       <ul className={`menu__elements ${menuOpened ? 'menu__elements_showed' : ''}`}>
         <li className="menu__element">
           <Link className="menu__link" to="/portfolio/" onClick={closeMenu}>
-            {translation?.menuHome}
+            {TRANSLATION?.MENU.HOME[LANG]}
           </Link>
         </li>
         <li className="menu__element">
           <Link className="menu__link" to="/portfolio/about" onClick={closeMenu}>
-            {translation?.menuAbout}
+            {TRANSLATION?.MENU.ABOUT[LANG]}
           </Link>
         </li>
         <li className="menu__element">
           <Link className="menu__link" to="/portfolio/uses" onClick={closeMenu}>
-            {translation?.menuUses}
+            {TRANSLATION?.MENU.USES[LANG]}
           </Link>
         </li>
         <li className="menu__element">
           <Link className="menu__link" to="/portfolio/contact" onClick={closeMenu}>
-            {translation?.menuContact}
+            {TRANSLATION?.MENU.CONTACT[LANG]}
           </Link>
         </li>
         <li className="menu__element">
           <Link className="menu__link" to="/portfolio/credits" onClick={closeMenu}>
-            {translation?.menuCredits}
+            {TRANSLATION?.MENU.CREDITS[LANG]}
           </Link>
         </li>
       </ul>

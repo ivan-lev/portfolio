@@ -4,13 +4,8 @@ import './Header.scss';
 import Logo from '../Logo/Logo.jsx';
 import Menu from '../Menu/Menu.jsx';
 
-function Header() {
-  return (
-    <header className="header">
-      <Logo />
-      <Menu />
-    </header>
-  );
+function Header({ children }) {
+  return <header className="header">{children}</header>;
 }
 
 export default Header;

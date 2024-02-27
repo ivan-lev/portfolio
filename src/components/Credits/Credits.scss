@@ -23,11 +23,13 @@
   }
 
   &__link {
-    color: var(--color-secondary);
+    color: var(--color-primary);
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     text-wrap: wrap;
+    text-decoration: none;
+    font-weight: bold;
 
     @media screen and (max-width: 1440px) {
       font-size: 14px;

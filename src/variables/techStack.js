@@ -17,26 +17,26 @@ import laptop from '../assets/icons/misc/laptop.svg';
 import meditation from '../assets/icons/misc/meditation.svg';
 
 export const techStack = {
-  sass: { logo: sass, title: 'SASS', showOnMain: true },
-  css: { logo: css, title: 'CSS', showOnMain: true },
-  git: { logo: git, title: 'Git', showOnMain: true },
-  github: { logo: github, title: 'Github', showOnMain: true },
-  html: { logo: html, title: 'HTML', showOnMain: true },
-  js: { logo: js, title: 'JavaScript', showOnMain: true },
-  nodejs: { logo: nodejs, title: 'NodeJS', showOnMain: true },
-  reactjs: { logo: reactjs, title: 'React', showOnMain: true },
-  redux: { logo: redux, title: 'Redux', showOnMain: true },
-  postman: { logo: postman, title: 'Postman', showOnMain: true },
-  mongodb: { logo: mongodb, title: 'MongoDB', showOnMain: true },
-  figma: { logo: figma, title: 'Figma', showOnMain: true },
-  vscode: { logo: vscode, title: 'VSCode', showOnMain: true },
-  jabra: { logo: airbuds, title: 'Jabra Elite Active 65t', showOnMain: false },
-  macbook: { logo: laptop, title: 'MacBook Air 13"', showOnMain: false },
-  insightTimer: { logo: meditation, title: 'Insight Timer', showOnMain: false }
+  SASS: { logo: sass, title: 'SASS', showOnMain: true },
+  CSS: { logo: css, title: 'CSS', showOnMain: true },
+  GIT: { logo: git, title: 'Git', showOnMain: true },
+  GITHUB: { logo: github, title: 'Github', showOnMain: true },
+  HTML: { logo: html, title: 'HTML', showOnMain: true },
+  JS: { logo: js, title: 'JavaScript', showOnMain: true },
+  NODEJS: { logo: nodejs, title: 'NodeJS', showOnMain: true },
+  REACT: { logo: reactjs, title: 'React', showOnMain: true },
+  REDUX: { logo: redux, title: 'Redux', showOnMain: true },
+  POSTMAN: { logo: postman, title: 'Postman', showOnMain: true },
+  MONGODB: { logo: mongodb, title: 'MongoDB', showOnMain: true },
+  FIGMA: { logo: figma, title: 'Figma', showOnMain: true },
+  VSCODE: { logo: vscode, title: 'VSCode', showOnMain: true },
+  JABRA: { logo: airbuds, title: 'Jabra Elite Active 65t', showOnMain: false },
+  MACBOOK: { logo: laptop, title: 'MacBook Air 13"', showOnMain: false },
+  INSIGHT_TIMER: { logo: meditation, title: 'Insight Timer', showOnMain: false }
 };
 
-export const otherStack = {
-  jabra: { logo: airbuds, title: 'Jabra Elite Active 65t' },
-  macbook: { logo: laptop, title: 'MacBook Air 13"' },
-  insightTimer: { logo: meditation, title: 'Insight Timer' }
-};
+// export const otherStack = {
+//   jabra: { logo: airbuds, title: 'Jabra Elite Active 65t' },
+//   macbook: { logo: laptop, title: 'MacBook Air 13"' },
+//   insightTimer: { logo: meditation, title: 'Insight Timer' }
+// };

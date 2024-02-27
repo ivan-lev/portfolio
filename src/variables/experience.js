@@ -1,9 +1,17 @@
 export const educations = [
   {
-    id: 1,
-    position: 'Web Developer',
+    id: 2,
+    position: 'Веб-разработчик',
+    type: 'Дополнительное',
     organization: 'Yandex Practicum',
-    period: 'Mar 2023 - Mar 2024'
+    period: 'Мар 2023 - Мар 2024'
+  },
+  {
+    id: 1,
+    position: 'Менеджер',
+    type: 'Высшее',
+    organization: 'Магнитогорский Гос. Университет',
+    period: 'Сен 2004 - Май 2009'
   }
 ];
 

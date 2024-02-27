@@ -1,12 +1,14 @@
 import { useContext } from 'react';
 import './Uses.scss';
 
+import { LanguageContext } from '../../contexts/languageContext.js';
 import { TranslationContext } from '../../contexts/translationContext.js';
 
 import { techStack } from '../../variables/techStack.js';
 
 export default function Uses() {
-  const translation = useContext(TranslationContext);
+  const LANG = useContext(LanguageContext);
+  const TRANSLATION = useContext(TranslationContext);
 
   function createListElement(name) {
     return (
@@ -15,57 +17,48 @@ export default function Uses() {
           <img className="uses__logo" src={techStack[name]?.logo}></img>
           <h3 className="uses__title">{techStack[name]?.title}</h3>
         </div>
-
-        <p className="text uses__text">{translation?.usesTranslations[name]}</p>
+        <p className="text uses__text">{TRANSLATION?.USES[name][LANG]}</p>
       </li>
     );
   }
 
   return (
     <article className="uses__article">
-      <h1 className="title-gray">{translation?.usesTranslations?.usesTitle}</h1>
-      <div className="subtitle">{translation?.usesTranslations?.usesSubtitle}</div>
+      <h1 className="title-gray">{TRANSLATION?.USES.TITLE[LANG]}</h1>
+      <div className="subtitle">{TRANSLATION?.USES.SUBTITLE[LANG]}</div>
       <section className="uses__section">
-        <h2 className="uses__title uses__section-title">{translation?.usesTranslations?.design}</h2>
-        <ul className="uses__list">{createListElement('figma')}</ul>
+        <h2 className="uses__title uses__section-title">{TRANSLATION?.USES.DESIGN[LANG]}</h2>
+        <ul className="uses__list">{createListElement('FIGMA')}</ul>
       </section>
 
       <section className="uses__section">
-        <h2 className="uses__title uses__section-title">
-          {translation?.usesTranslations?.frontend}
-        </h2>
+        <h2 className="uses__title uses__section-title">{TRANSLATION?.USES.FRONTEND[LANG]}</h2>
         <ul className="uses__list">
-          {createListElement('vscode')}
-          {createListElement('reactjs')}
+          {createListElement('VSCODE')}
+          {createListElement('REACT')}
         </ul>
       </section>
 
       <section className="uses__section">
-        <h2 className="uses__title uses__section-title">
-          {translation?.usesTranslations?.backend}
-        </h2>
+        <h2 className="uses__title uses__section-title">{TRANSLATION?.USES.BACKEND[LANG]}</h2>
         <ul className="uses__list">
-          {createListElement('nodejs')}
-          {createListElement('mongodb')}
-          {createListElement('postman')}
+          {createListElement('NODEJS')}
+          {createListElement('MONGODB')}
+          {createListElement('POSTMAN')}
         </ul>
       </section>
 
       <section className="uses__section">
-        <h2 className="uses__title uses__section-title">
-          {translation?.usesTranslations?.hardware}
-        </h2>
+        <h2 className="uses__title uses__section-title">{TRANSLATION?.USES.HARDWARE[LANG]}</h2>
         <ul className="uses__list">
-          {createListElement('macbook')}
-          {createListElement('jabra')}
+          {createListElement('MACBOOK')}
+          {createListElement('JABRA')}
         </ul>
       </section>
 
       <section className="uses__section">
-        <h2 className="uses__title uses__section-title">
-          {translation?.usesTranslations?.healthAndProductivity}
-        </h2>
-        <ul className="uses__list">{createListElement('insightTimer')}</ul>
+        <h2 className="uses__title uses__section-title">{TRANSLATION?.USES.HEALT_PROD[LANG]}</h2>
+        <ul className="uses__list">{createListElement('INSIGHT_TIMER')}</ul>
       </section>
     </article>
   );
