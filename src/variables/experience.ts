@@ -1,9 +1,12 @@
-export const educations = [
+import { Experience } from '../types/Experience';
+
+export const educations: Experience[] = [
   {
     id: 2,
     position: 'Веб-разработчик',
     type: 'Дополнительное',
     organization: 'Yandex Practicum',
+    location: '',
     period: 'Мар 2023 - Мар 2024'
   },
   {
@@ -11,6 +14,7 @@ export const educations = [
     position: 'Менеджер',
     type: 'Высшее',
     organization: 'Магнитогорский Гос. Университет',
+    location: '',
     period: 'Сен 2004 - Май 2009'
   }
 ];

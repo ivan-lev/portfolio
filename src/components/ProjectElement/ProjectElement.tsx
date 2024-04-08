@@ -1,14 +1,19 @@
-import React, { useContext } from 'react';
 import './ProjectElement.scss';
 
-import { LanguageContext } from '../../contexts/languageContext.js';
-import { TranslationContext } from '../../contexts/translationContext.js';
+import { useContext } from 'react';
+
+import { LanguageContext } from '../../contexts/languageContext.ts';
+import { TranslationContext } from '../../contexts/translationContext.ts';
+
+import type { Project } from '../../types/Project.ts';
 
 import filler from '../../assets/images/project-previews/filler.png';
 
-export default function ProjectElement({ preview, title, stack, description, link, ghLink }) {
+export default function ProjectElement({ project }: { project: Project }) {
   const LANG = useContext(LanguageContext);
   const TRANSLATION = useContext(TranslationContext);
+
+  const { preview, title, stack, description, link, ghLink } = project;
 
   return (
     <li className="project-card">
@@ -37,5 +42,3 @@ export default function ProjectElement({ preview, title, stack, description, lin
     </li>
   );
 }
-
-//export default ProjectCard;

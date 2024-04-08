@@ -1,29 +1,19 @@
 import './Credits.scss';
 
 // hooks
-import { useContext, useState, useEffect } from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 
-//variables and contexts
-import { logoFigure } from '../../vendor/meshspin';
-import { LanguageContext } from '../../contexts/languageContext.js';
-import { TranslationContext } from '../../contexts/translationContext.js';
+// components
+import MeshSpinComponent from '../MeshSpin/MeshSpin.tsx';
 
-export default function Credits() {
+//variables and contexts
+import { LanguageContext } from '../../contexts/languageContext.ts';
+import { TranslationContext } from '../../contexts/translationContext.ts';
+
+export default function Credits(): JSX.Element {
   const LANG = useContext(LanguageContext);
   const TRANSLATION = useContext(TranslationContext);
-
-  const [isMeshLoaded, setIsMeshLoaded] = useState(false);
-
-  useEffect(() => {
-    setIsMeshLoaded(true);
-  }, []);
-
-  useEffect(() => {
-    if (isMeshLoaded) {
-      logoFigure();
-    }
-  }, [isMeshLoaded]);
 
   return (
     <article className="credits">
@@ -34,7 +24,7 @@ export default function Credits() {
         <span className="credits__text">{TRANSLATION?.CREDITS.WIFE[LANG]}</span>
       </p>
 
-      <div className="mesh-spin" id="wrapper"></div>
+      <MeshSpinComponent />
 
       <div className="text">
         <span className="credits__text">{TRANSLATION?.CREDITS.SITE[LANG]}</span>

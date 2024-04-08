@@ -1,10 +1,10 @@
 import { useContext } from 'react';
 import './Footer.scss';
 
-import { LanguageContext } from '../../contexts/languageContext.js';
-import { TranslationContext } from '../../contexts/translationContext.js';
+import { LanguageContext } from '../../contexts/languageContext.ts';
+import { TranslationContext } from '../../contexts/translationContext.ts';
 
-import SocialLinks from '../SocialLinks/SocialLinks.jsx';
+import SocialLinks from '../SocialLinks/SocialLinks.tsx';
 
 function Footer() {
   const LANG = useContext(LanguageContext);

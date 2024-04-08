@@ -1,8 +1,8 @@
 import { useContext } from 'react';
 import './Contact.scss';
 
-import { LanguageContext } from '../../contexts/languageContext.js';
-import { TranslationContext } from '../../contexts/translationContext.js';
+import { LanguageContext } from '../../contexts/languageContext.ts';
+import { TranslationContext } from '../../contexts/translationContext.ts';
 
 export default function Contact() {
   const LANG = useContext(LanguageContext);

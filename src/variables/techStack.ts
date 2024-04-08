@@ -16,7 +16,9 @@ import airbuds from '../assets/icons/misc/airbuds.svg';
 import laptop from '../assets/icons/misc/laptop.svg';
 import meditation from '../assets/icons/misc/meditation.svg';
 
-export const techStack = {
+import type { TechStack } from '../types/TechStack.ts';
+
+export const techStack: TechStack = {
   SASS: { logo: sass, title: 'SASS', showOnMain: true },
   CSS: { logo: css, title: 'CSS', showOnMain: true },
   GIT: { logo: git, title: 'Git', showOnMain: true },
@@ -34,9 +36,3 @@ export const techStack = {
   MACBOOK: { logo: laptop, title: 'MacBook Air 13"', showOnMain: false },
   INSIGHT_TIMER: { logo: meditation, title: 'Insight Timer', showOnMain: false }
 };
-
-// export const otherStack = {
-//   jabra: { logo: airbuds, title: 'Jabra Elite Active 65t' },
-//   macbook: { logo: laptop, title: 'MacBook Air 13"' },
-//   insightTimer: { logo: meditation, title: 'Insight Timer' }
-// };

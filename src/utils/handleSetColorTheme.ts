@@ -1,4 +1,4 @@
-export default function handleSetColorTheme(theme) {
+export default function handleSetColorTheme(theme: string = 'dark'): void {
   const elem = document.documentElement;
 
   elem.style.setProperty('--bg-color-primary', `var(--bg-${theme}-primary)`);

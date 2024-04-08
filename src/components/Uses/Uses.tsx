@@ -1,16 +1,16 @@
 import { useContext } from 'react';
 import './Uses.scss';
 
-import { LanguageContext } from '../../contexts/languageContext.js';
-import { TranslationContext } from '../../contexts/translationContext.js';
+import { LanguageContext } from '../../contexts/languageContext.ts';
+import { TranslationContext } from '../../contexts/translationContext.ts';
 
-import { techStack } from '../../variables/techStack.js';
+import { techStack } from '../../variables/techStack.ts';
 
 export default function Uses() {
   const LANG = useContext(LanguageContext);
   const TRANSLATION = useContext(TranslationContext);
 
-  function createListElement(name) {
+  function createListElement(name: string) {
     return (
       <li className="uses__list-element">
         <div className="uses__header">

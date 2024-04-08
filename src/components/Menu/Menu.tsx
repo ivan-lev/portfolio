@@ -1,3 +1,5 @@
+/// <reference types="vite-plugin-svgr/client" />
+
 import { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import './Menu.scss';
@@ -5,8 +7,8 @@ import './Menu.scss';
 import BurgerClosedIcon from '../../images/icon-burger-closed.svg?react';
 import BurgerOpenedIcon from '../../images/icon-burger-opened.svg?react';
 
-import { LanguageContext } from '../../contexts/languageContext.js';
-import { TranslationContext } from '../../contexts/translationContext.js';
+import { LanguageContext } from '../../contexts/languageContext.ts';
+import { TranslationContext } from '../../contexts/translationContext.ts';
 
 export default function Menu() {
   const LANG = useContext(LanguageContext);

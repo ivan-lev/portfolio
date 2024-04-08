@@ -2,28 +2,31 @@ import { useState, useEffect } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import './App.scss';
 
-import { TranslationContext, TRANSLATION } from '../../contexts/translationContext.js';
-import { LanguageContext } from '../../contexts/languageContext.js';
+// import { TranslationContext, TRANSLATION } from '../../contexts/translationContext.js';
+import { LanguageContext } from '../../contexts/languageContext.ts';
 
-import ToggleLanguageButton from '../ToggleLanguageButton/ToggleLanguageButton.jsx';
-import ToggleThemeButton from '../ToggleThemeButton/ToggleThemeButton.jsx';
-import handleSetColorTheme from '../../utils/handleSetColorTheme.js';
+import { TRANSLATION } from '../../variables/translation.ts';
+import { TranslationContext } from '../../contexts/translationContext.ts';
 
-import Logo from '../Logo/Logo.jsx';
-import Menu from '../Menu/Menu.jsx';
-import Header from '../Header/Header.jsx';
-import Main from '../Main/Main.jsx';
-import Footer from '../Footer/Footer.jsx';
-import About from '../About/About.jsx';
-import Uses from '../Uses/Uses.jsx';
-import Contact from '../Contact/Contact.jsx';
-import Credits from '../Credits/Credits.jsx';
+import ToggleLanguageButton from '../ToggleLanguageButton/ToggleLanguageButton.tsx';
+import ToggleThemeButton from '../ToggleThemeButton/ToggleThemeButton.tsx';
+import handleSetColorTheme from '../../utils/handleSetColorTheme.ts';
+
+import Logo from '../Logo/Logo.tsx';
+import Menu from '../Menu/Menu.tsx';
+import Header from '../Header/Header.tsx';
+import Main from '../Main/Main.tsx';
+import Footer from '../Footer/Footer.tsx';
+import About from '../About/About.tsx';
+import Uses from '../Uses/Uses.tsx';
+import Contact from '../Contact/Contact.tsx';
+import Credits from '../Credits/Credits.tsx';
 
 function App() {
   const localStoredLanguage = localStorage.getItem('lang');
   const localStoredTheme = localStorage.getItem('theme');
-  const [lang, setLang] = useState(localStoredLanguage);
-  const [theme, setTheme] = useState(localStoredTheme);
+  const [lang, setLang] = useState(localStoredLanguage ?? 'en');
+  const [theme, setTheme] = useState(localStoredTheme ?? 'dark');
 
   useEffect(() => {
     if (!localStorage.getItem('theme')) {

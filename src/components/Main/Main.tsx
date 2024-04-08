@@ -1,19 +1,21 @@
-import { useContext } from 'react';
 import './Main.scss';
 
-import { LanguageContext } from '../../contexts/languageContext.js';
-import { TranslationContext } from '../../contexts/translationContext.js';
+import { useContext } from 'react';
+
+import { LanguageContext } from '../../contexts/languageContext.ts';
+import { TranslationContext } from '../../contexts/translationContext.ts';
 
 import avatar from '../../assets/images/avatar.jpg';
 
-import ProjectElement from '../ProjectElement/ProjectElement.jsx';
-import { projects } from '../../variables/projects.js';
+import ProjectElement from '../ProjectElement/ProjectElement.tsx';
+import { projects } from '../../variables/projects.ts';
 
-import TechElement from '../TechElement/TechElement.jsx';
-import { techStack } from '../../variables/techStack.js';
+import TechElement from '../TechElement/TechElement.tsx';
 
-function Main() {
-  const LANG = useContext(LanguageContext);
+import { techStack } from '../../variables/techStack.ts';
+
+function Main(): JSX.Element {
+  const LANG: string = useContext(LanguageContext);
   const TRANSLATION = useContext(TranslationContext);
 
   return (
@@ -37,11 +39,7 @@ function Main() {
           {Object.keys(techStack).map(
             element =>
               techStack[element].showOnMain && (
-                <TechElement
-                  key={techStack[element].title}
-                  logo={techStack[element].logo}
-                  alt={techStack[element].title}
-                />
+                <TechElement technology={techStack[element]} key={techStack[element].title} />
               )
           )}
         </ul>
@@ -51,16 +49,8 @@ function Main() {
         <h2 className="title-blue">{TRANSLATION?.MAIN.PROJECTS_TITLE[LANG]}</h2>
         <p className="subtitle">{TRANSLATION?.MAIN.PROJECTS_SUBTITLE[LANG]}</p>
         <ul className="main__projects-list">
-          {projects.map(({ id, preview, title, description, stack, link, ghLink }) => (
-            <ProjectElement
-              key={id}
-              preview={preview}
-              title={title}
-              description={description}
-              stack={stack}
-              link={link}
-              ghLink={ghLink}
-            />
+          {projects.map(project => (
+            <ProjectElement project={project} key={project.id} />
           ))}
         </ul>
       </section>

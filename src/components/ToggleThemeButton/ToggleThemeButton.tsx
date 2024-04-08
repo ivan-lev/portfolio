@@ -1,12 +1,13 @@
-import React from 'react';
 import './ToggleThemeButton.scss';
 
-import handleSetColorTheme from '../../utils/handleSetColorTheme.js';
+import type { ToggleTheme } from '../../types/ToggleTheme.ts';
+
+import handleSetColorTheme from '../../utils/handleSetColorTheme.ts';
 
 import SunIcon from '../../images/icon-theme-sun.svg?react';
 import MoonIcon from '../../images/icon-theme-moon.svg?react';
 
-export default function ToggleThemeButton({ theme, setTheme }) {
+export default function ToggleThemeButton({ theme, setTheme }: ToggleTheme) {
   function toggleTheme() {
     let newTheme = '';
 

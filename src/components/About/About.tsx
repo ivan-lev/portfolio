@@ -2,15 +2,15 @@ import './About.scss';
 
 //hooks
 import { useContext } from 'react';
-import { Link } from 'react-router-dom';
 
 //components
-import ExperienceElement from '../ExperienceElement/ExperienceElement.jsx';
+import ExperienceElement from '../ExperienceElement/ExperiencsElement.tsx';
 
 //variables and contexts
-import { LanguageContext } from '../../contexts/languageContext.js';
-import { TranslationContext } from '../../contexts/translationContext.js';
-import { educations, jobs } from '../../variables/experience.js';
+import { LanguageContext } from '../../contexts/languageContext.ts';
+import { TranslationContext } from '../../contexts/translationContext.ts';
+
+import { educations, jobs } from '../../variables/experience.ts';
 
 export default function About() {
   const LANG = useContext(LanguageContext);
@@ -37,9 +37,13 @@ export default function About() {
       <article>
         <h2 className="title-gray">{TRANSLATION.ABOUT_ME.TITLE[LANG]}</h2>
         <p className="text">{TRANSLATION.ABOUT_ME.INFO[LANG]}</p>
-        {/* <Link className="about__download-cv-button" to="#">
+        <a
+          href="/src/assets/cv/ivan-lev-cv.pdf"
+          target="_blank"
+          className="about__download-cv-button"
+        >
           Download CV
-        </Link> */}
+        </a>
       </article>
       {/* <article>
         <h2 className="title-gray">{translation.workExperience}</h2>
@@ -60,14 +64,7 @@ export default function About() {
         <h2 className="title-gray">{TRANSLATION.ABOUT_ME.EDUCATION[LANG]}</h2>
         <ul className="about__list">
           {educations.map(education => (
-            <ExperienceElement
-              key={education.id}
-              position={education.position}
-              type={education.type}
-              organization={education.organization}
-              place={education.place}
-              period={education.period}
-            />
+            <ExperienceElement experience={education} key={education.id} />
           ))}
         </ul>
       </article>

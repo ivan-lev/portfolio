@@ -1,7 +1,8 @@
-import React from 'react';
 import './ToggleLanguageButton.scss';
 
-export default function ToggleLanguageButton({ language, setLanguage }) {
+import { ToggleLanguage } from '../../types/ToggleLanguage';
+
+export default function ToggleLanguageButton({ language, setLanguage }: ToggleLanguage) {
   const toggleLanguage = () => {
     if (language === 'en') {
       localStorage.setItem('lang', 'ru');

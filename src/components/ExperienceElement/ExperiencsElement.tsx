@@ -1,8 +1,9 @@
 import './ExperienceElement.scss';
 
-import React from 'react';
+import type { Experience } from '../../types/Experience';
 
-export default function ExperienceElement({ position, type, organization, location, period }) {
+export default function ExperienceElement({ experience }: { experience: Experience }) {
+  const { position, type, organization, location, period } = experience;
   return (
     <li className="experience__container">
       <p className="experience__row">
