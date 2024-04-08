@@ -1,4 +1,4 @@
-function MeshSpin() {
+export function MeshSpin() {
   (this.props = {
     animate: !0,
     background: !1,
@@ -229,75 +229,4 @@ function MeshSpin() {
           }, 100));
       };
     });
-}
-
-var phi = (1 + Math.sqrt(5)) / 2;
-var dodecahedron = {};
-dodecahedron.nodes = [
-  { x: 1, y: 1, z: 1 },
-  { x: 1, y: 1, z: -1 },
-  { x: 1, y: -1, z: 1 },
-  { x: 1, y: -1, z: -1 },
-  { x: -1, y: 1, z: 1 },
-  { x: -1, y: 1, z: -1 },
-  { x: -1, y: -1, z: 1 },
-  { x: -1, y: -1, z: -1 },
-  { x: 0, y: phi, z: 1 / phi },
-  { x: 0, y: phi, z: -1 / phi },
-  { x: 0, y: -phi, z: 1 / phi },
-  { x: 0, y: -phi, z: -1 / phi },
-  { x: 1 / phi, y: 0, z: phi },
-  { x: 1 / phi, y: 0, z: -phi },
-  { x: -1 / phi, y: 0, z: phi },
-  { x: -1 / phi, y: 0, z: -phi },
-  { x: phi, y: 1 / phi, z: 0 },
-  { x: phi, y: -1 / phi, z: 0 },
-  { x: -phi, y: 1 / phi, z: 0 },
-  { x: -phi, y: -1 / phi, z: 0 }
-];
-dodecahedron.edges = [
-  [0, 16],
-  [0, 8],
-  [0, 12],
-  [1, 9],
-  [1, 13],
-  [1, 16],
-  [2, 10],
-  [2, 12],
-  [2, 17],
-  [3, 11],
-  [3, 13],
-  [3, 17],
-  [4, 8],
-  [4, 14],
-  [4, 18],
-  [5, 9],
-  [5, 15],
-  [5, 18],
-  [6, 10],
-  [6, 14],
-  [6, 19],
-  [7, 11],
-  [7, 15],
-  [7, 19],
-  [8, 9],
-  [10, 11],
-  [12, 14],
-  [13, 15],
-  [16, 17],
-  [18, 19]
-];
-
-const mesh = new MeshSpin();
-mesh.figure(dodecahedron);
-mesh.fake3D = true;
-mesh.background = true;
-mesh.getRotationOffset = function () {
-  const r = mesh.rotateByMouse();
-  return { x: r.x - 0.01, y: r.y - 0.005, z: 0.005 };
-};
-
-export function logoFigure() {
-  mesh.setup('wrapper');
-  mesh.run();
 }
