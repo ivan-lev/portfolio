@@ -58,12 +58,11 @@ function App() {
             <Menu />
           </Header>
           <Routes>
-            <Route path="/" element={<Navigate to="/portfolio/" />} />
-            <Route path="/portfolio/" element={<Main />} />
-            <Route path="/portfolio/about" element={<About />} />
-            <Route path="/portfolio/uses" element={<Uses />} />
-            <Route path="/portfolio/contact" element={<Contact />} />
-            <Route path="/portfolio/credits" element={<Credits />} />
+            <Route path="/" element={<Main />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/uses" element={<Uses />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/credits" element={<Credits />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
           <Footer />
