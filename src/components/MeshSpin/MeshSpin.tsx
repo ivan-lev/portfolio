@@ -12,8 +12,8 @@ export default function MeshSpinComponent(): JSX.Element {
 
   const renderFigure = () => {
     mesh.figure(dodecahedron);
-    mesh.fake3D = true;
-    mesh.background = true;
+    // mesh.fake3D = true;
+    // mesh.background = true;
     mesh.setup('wrapper');
     mesh.run();
   };

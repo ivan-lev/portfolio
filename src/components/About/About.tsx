@@ -10,7 +10,9 @@ import ExperienceElement from '../ExperienceElement/ExperiencsElement.tsx';
 import { LanguageContext } from '../../contexts/languageContext.ts';
 import { TranslationContext } from '../../contexts/translationContext.ts';
 
-import { educations, jobs } from '../../variables/experience.ts';
+import { educations } from '../../variables/experience.ts';
+// below import is created for future
+// import { jobs } from '../../variables/experience.ts';
 
 export default function About() {
   const LANG = useContext(LanguageContext);
