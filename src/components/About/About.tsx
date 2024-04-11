@@ -13,6 +13,7 @@ import { TranslationContext } from '../../contexts/translationContext.ts';
 import { educations } from '../../variables/experience.ts';
 // below import is created for future
 // import { jobs } from '../../variables/experience.ts';
+import { biography } from '../../variables/translation-biography.ts';
 
 export default function About() {
   const LANG = useContext(LanguageContext);
@@ -20,25 +21,18 @@ export default function About() {
 
   return (
     <section className="about">
-      {/* Work
-      I'm self-taught programmer from Russia.
-      One day I decided to switch career from being bartender.
-      What I didnt know back then is that in the process of learning to code I would soon discover a true passion.
-      I have a one years of experience developing web applications, building websites and contributing to Open Source projects.
-      React - thats the technology I know best and work daily with.
-
-      Bio
-      1987 Born in Magnitogorsk, Russia.
-      2009 Graduated from Magnitogorsk State University
-      2015 Started e-commerce project with vintage Japanese ceramics
-      2023 to present Works as a Frontend developer
-
-      My interests
-      Чай, фотография */}
-
       <article>
         <h2 className="title-gray">{TRANSLATION.ABOUT_ME.TITLE[LANG]}</h2>
         <p className="text">{TRANSLATION.ABOUT_ME.INFO[LANG]}</p>
+        <h3 className="text">{TRANSLATION.ABOUT_ME.BIOGRAPHY[LANG]}</h3>
+
+        <div className="text">
+          <ul>
+            {biography.map(biographyElement => (
+              <li>{biographyElement[LANG]}</li>
+            ))}
+          </ul>
+        </div>
         <a
           href="/src/assets/cv/ivan-lev-cv.pdf"
           target="_blank"

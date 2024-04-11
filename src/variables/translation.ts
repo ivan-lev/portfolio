@@ -35,11 +35,12 @@ export const TRANSLATION: Translation = {
   ABOUT_ME: {
     TITLE: { ru: 'Обо мне', en: 'About me' },
     INFO: {
-      ru: 'Привет! Меня зовут Иван. Я веб-разработчик, увлечённый своим делом. Я интересуюсь свежими технологиями и стараюсь внедрить их в свою практику. Из личных интересов я увлекаюсь китайским чаем, японской культурой и практикую медитацию.',
-      en: 'Hello! My name is Ivan. I am a web developer who is passionate about my work. I am interested in new technologies and try to introduce them into my practice. My personal interests include Chinese tea, Japanese culture, and practicing meditation.'
+      ru: 'Привет! Меня зовут Иван. Я веб-разработчик, увлечённый своим делом. Я интересуюсь свежими технологиями и стараюсь внедрить их в свою практику. У меня был свой интернет магазин, но я всегда интересовался веб-технологиями, и в один из дней решил научиться создавать сайты и веб-приложения, а затем и вовсе сменить сферу деятельности. Я знал, что изучать программирование можно бесконечно, но даже не догадывался, что это так увлекательно! Из личных интересов могу отметить фотографию, походы, китайский чай, японскую культуру и керамику страны восходящего солнца, а также медитацию.',
+      en: 'Hello! My name is Ivan. I am a web developer who is passionate about my work. I am interested in new technologies and try to introduce them into my practice. I had my own online store, but I was always interested in web technologies, and one day I decided to learn how to create websites and web applications, and then completely change my field of activity. I knew that you could study programming endlessly, but I had no idea that it was so exciting! Among my personal interests, I can mention photography, hiking, Chinese tea, Japanese culture and ceramics of the land of the rising sun, as well as meditation.'
     },
     EXPERIENCE: { ru: 'Опыт работы', en: 'Work experience' },
-    EDUCATION: { ru: 'Образование', en: 'Education' }
+    EDUCATION: { ru: 'Образование', en: 'Education' },
+    BIOGRAPHY: { ru: 'Биография', en: 'Biography' }
   },
   USES: {
     TITLE: {
