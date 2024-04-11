@@ -1,8 +1,12 @@
+type ExperienceField = {
+  [key: string]: string;
+};
+
 export type Experience = {
   id: number;
-  position: string;
-  type: string;
-  organization: string;
-  location: string | undefined;
-  period: string;
+  position: ExperienceField;
+  type: ExperienceField;
+  organization: ExperienceField;
+  location?: ExperienceField;
+  period: ExperienceField;
 };

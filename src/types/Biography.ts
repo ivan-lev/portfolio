@@ -1,5 +1,5 @@
 type BiographyElement = {
-  [key: string]: string;
+  [key: string | KeyType]: string | number;
 };
 
 export type Biography = BiographyElement[];

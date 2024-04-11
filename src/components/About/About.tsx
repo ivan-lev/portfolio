@@ -29,7 +29,7 @@ export default function About() {
         <div className="text">
           <ul>
             {biography.map(biographyElement => (
-              <li>{biographyElement[LANG]}</li>
+              <li key={biographyElement.id}>{biographyElement[LANG]}</li>
             ))}
           </ul>
         </div>
@@ -60,7 +60,7 @@ export default function About() {
         <h2 className="title-gray">{TRANSLATION.ABOUT_ME.EDUCATION[LANG]}</h2>
         <ul className="about__list">
           {educations.map(education => (
-            <ExperienceElement experience={education} key={education.id} />
+            <ExperienceElement experience={education} key={education.id} lang={LANG} />
           ))}
         </ul>
       </article>
