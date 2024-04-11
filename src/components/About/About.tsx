@@ -38,7 +38,7 @@ export default function About() {
           target="_blank"
           className="about__download-cv-button"
         >
-          Download CV
+          {TRANSLATION.ABOUT_ME.DOWNLOAD_CV[LANG]}
         </a>
       </article>
       {/* <article>

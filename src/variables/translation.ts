@@ -40,7 +40,8 @@ export const TRANSLATION: Translation = {
     },
     EXPERIENCE: { ru: 'Опыт работы', en: 'Work experience' },
     EDUCATION: { ru: 'Образование', en: 'Education' },
-    BIOGRAPHY: { ru: 'Биография', en: 'Biography' }
+    BIOGRAPHY: { ru: 'Биография', en: 'Biography' },
+    DOWNLOAD_CV: { ru: 'Скачать CV', en: 'Download CV' }
   },
   USES: {
     TITLE: {
