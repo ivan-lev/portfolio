@@ -10,6 +10,7 @@ import postman from '../assets/icons/tech/postman.svg';
 import reactjs from '../assets/icons/tech/reactjs.svg';
 import redux from '../assets/icons/tech/redux.svg';
 import sass from '../assets/icons/tech/sass.svg';
+import ts from '../assets/icons/tech/typescript.svg';
 import vscode from '../assets/icons/tech/vscode.svg';
 
 import airbuds from '../assets/icons/misc/airbuds.svg';
@@ -25,6 +26,7 @@ export const techStack: TechStack = {
   GITHUB: { logo: github, title: 'Github', showOnMain: true },
   HTML: { logo: html, title: 'HTML', showOnMain: true },
   JS: { logo: js, title: 'JavaScript', showOnMain: true },
+  TS: { logo: ts, title: 'TypeScript', showOnMain: true },
   NODEJS: { logo: nodejs, title: 'NodeJS', showOnMain: true },
   REACT: { logo: reactjs, title: 'React', showOnMain: true },
   REDUX: { logo: redux, title: 'Redux', showOnMain: true },
