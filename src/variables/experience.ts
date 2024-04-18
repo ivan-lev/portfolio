@@ -2,6 +2,14 @@ import { Experience } from '../types/Experience';
 
 export const educations: Experience[] = [
   {
+    id: 3,
+    position: { ru: 'Курс TypeScript', en: 'TypeScript Course' },
+    type: { ru: 'Дополнительное', en: 'Additional' },
+    organization: { ru: 'https://code-basics.com', en: 'https://code-basics.com' },
+    // location: '',
+    period: { ru: 'Апр 2024', en: 'April 2024' }
+  },
+  {
     id: 2,
     position: { ru: 'Веб-разработчик', en: 'Web Developer' },
     type: { ru: 'Дополнительное', en: 'Additional' },
