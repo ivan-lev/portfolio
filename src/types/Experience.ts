@@ -9,4 +9,5 @@ export type Experience = {
   organization: ExperienceField;
   location?: ExperienceField;
   period: ExperienceField;
+  certificate?: string;
 };
