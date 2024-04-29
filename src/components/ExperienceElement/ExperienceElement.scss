@@ -1,15 +1,28 @@
+$gap: 15px;
+
 .experience {
-  &__container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 30px 15px;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: $gap;
     color: var(--color-primary);
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 2px;
     background-color: var(--bg-color-secondary);
     border-radius: 10px;
+    padding: 30px $gap;
+  }
+
+  &__certificate-container {
+    position: relative;
+  }
+
+  &__information-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
   }
 
   &__row {
@@ -94,5 +107,13 @@
       height: 16px;
       content: '';
     }
+  }
+
+  &__certificate-image {
+    width: 100px;
+    height: auto;
+    display: flex;
+    cursor: pointer;
+    border-radius: 5px;
   }
 }
