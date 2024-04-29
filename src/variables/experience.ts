@@ -1,5 +1,7 @@
 import { Experience } from '../types/Experience';
 
+import yandexWebdevCertificate from '../assets/images/certificates/yandex-webdev.jpg';
+
 export const educations: Experience[] = [
   {
     id: 3,
@@ -15,7 +17,8 @@ export const educations: Experience[] = [
     type: { ru: 'Дополнительное', en: 'Additional' },
     organization: { ru: 'Яндекс.Практикум', en: 'Yandex.Practicum' },
     // location: '',
-    period: { ru: 'Мар 2023 - Мар 2024', en: 'Mar 2023 - Mar 2024' }
+    period: { ru: 'Мар 2023 - Мар 2024', en: 'Mar 2023 - Mar 2024' },
+    certificate: yandexWebdevCertificate
   },
   {
     id: 1,
