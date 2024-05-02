@@ -12,6 +12,17 @@ export const educations: Experience[] = [
     period: { ru: 'Апр 2024', en: 'April 2024' }
   },
   {
+    id: 4,
+    position: { ru: 'Курс Введение в TypeScript', en: 'Introduction to TypeScript Course' },
+    type: { ru: 'Дополнительное', en: 'Additional' },
+    organization: {
+      ru: 'https://stepik.org/course/118563/',
+      en: 'https://stepik.org/course/118563/'
+    },
+    // location: '',
+    period: { ru: 'Апр 2024', en: 'April 2024' }
+  },
+  {
     id: 2,
     position: { ru: 'Веб-разработчик', en: 'Web Developer' },
     type: { ru: 'Дополнительное', en: 'Additional' },
